@@ -15,17 +15,38 @@
  */
 class Solution {
     public int maxDepth(TreeNode root) {
-
-     //Base case 
-      if(root == null) {
-        return 0;
-      }
-
-      int leftHeight = maxDepth(root.left);
-      int rightHeight = maxDepth(root.right);
-
-      int maxDepth = Math.max(leftHeight, rightHeight) + 1;
-      return maxDepth;
+        
+        if(root == null) {
+            return 0;
+        }
+        
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        
+        int level = 0;
+        
+        while(!queue.isEmpty()) {
+            
+            //Increment the level as we are at the root
+            level += 1;
+            int size = queue.size();
+            
+            for(int i = 0; i < size ; i++ ) {
+            
+            TreeNode current = queue.remove();
+            
+            if(current.left != null) {
+                queue.add(current.left);
+            }
+            
+            if(current.right != null) {
+                queue.add(current.right);
+            }
+            
+        }
+                         
+     }
+        return level;
         
     }
 }
