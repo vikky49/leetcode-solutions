@@ -15,43 +15,53 @@
  */
 class Solution {
     public TreeNode addOneRow(TreeNode root, int val, int depth) {
-
+        
+        //Edge case 
+        
         if(depth == 1) {
             TreeNode node = new TreeNode(val);
             node.left = root;
-            return node;
+            root = node;
+            return root;
         }
-
+        
+        int level = 0;
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-        int d =  1;
         
-        while(d < depth-1) {
-            Queue<TreeNode> temp = new LinkedList<>();
-            while(!queue.isEmpty()){
-                TreeNode node = queue.remove();
-                if(node.left != null) {
-                    temp.add(node.left);
-                }
-
-                if(node.right != null) {
-                    temp.add(node.right);
-                }                
-            }
-            queue = temp;
-            d++;
-        }
-
         while(!queue.isEmpty()) {
-           TreeNode node = queue.remove();
-           TreeNode temp = node.left;
-           node.left = new TreeNode(val);
-           node.left.left = temp;
-
-           temp = node.right;
-           node.right = new TreeNode(val);
-           node.right.right = temp;
+            
+            level += 1;
+            int size = queue.size();
+            
+            for(int i = 0 ; i < size; i++ ) {
+            
+            TreeNode current = queue.remove();
+            
+             if (current.left != null) {
+                 queue.add(current.left);
+             }
+            
+            if (current.right != null) {
+                queue.add(current.right);
+            }
+            
+            if (level == depth-1) {
+                TreeNode newleft = new TreeNode(val);
+                TreeNode newright = new TreeNode(val);
+                
+                newleft.left = current.left;
+                newright.right = current.right;
+               
+                current.left = newleft;
+                current.right = newright;
+                
+            }
         }
-        return root;        
+            
+            
+    }
+        return root;
+        
     }
 }
