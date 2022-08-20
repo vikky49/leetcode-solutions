@@ -1,43 +1,26 @@
 class Solution {
-    public int maxVowels(String s, int k) {
-        char[] chars = s.toCharArray();
-        int maxVowels = 0;
-        int windowCount = 0;
-
-        boolean[] isVowel = new boolean[128]; // ASCII table size
-        isVowel['a'] = isVowel['e'] = isVowel['i'] = isVowel['o'] = isVowel['u'] = true;
-
-
-        for(int i = 0; i < k; i++) {
-            if(isVowel[chars[i]]) {
-                windowCount ++;
-            }
-        }
-
-        maxVowels = windowCount;
-
-        for(int i = k; i < s.length(); i++) {
-          
-          //slide the window
-           
-          if (isVowel[chars[i]]) {
-               windowCount ++;
-          }
-
-          if(isVowel[chars[i-k]]) {
-               windowCount --;
-          }
-
-          maxVowels = Math.max(windowCount, maxVowels);
-          
-        }
-
-        return maxVowels;
         
+   public boolean isVowel(char ch) {
+        return (ch == 'a' || ch == 'e' || ch == 'i' | ch == 'o' || ch == 'u');
     }
-
-     //private boolean isVowel(char c) {
-     //   return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
-    //}
-
+    
+    public int maxVowels(String s, int k) {
+        if (s.length() < k) return 0;
+        int max = 0, n = s.length();
+        int count = 0;
+        for(int i = 0; i < k; i++) {
+          if(isVowel(s.charAt(i))) count++;
+        }
+        max = count;
+		
+        for(int i = k; i < n; i++) {
+          // remove the contribution of the (i - k)th character which is no longer in the window
+          if(isVowel(s.charAt(i - k))) count--;
+          // add the contribution of the current character
+          if(isVowel(s.charAt(i))) count++;
+          // update max at for each window of size k
+          max = Math.max(max, count);
+        }
+        return max;
+    }
 }
