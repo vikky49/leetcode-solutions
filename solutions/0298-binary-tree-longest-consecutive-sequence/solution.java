@@ -15,57 +15,53 @@
  */
 class Solution {
     public int longestConsecutive(TreeNode root) {
-        
-        //Edge case 
-        
         int[] result = new int[1];
+
+        //Edge case 
         if(root == null) {
             return 0;
         }
-        
-        dfs(root,-1,0,result);
-        return  result[0];
+
+        dfs(root,root.val,-1,result);
+
+        return result[0];
         
     }
-    
-    
+
     private void dfs(
-        TreeNode node, 
-        int parentValue, 
+        TreeNode node,
+        int parentValue,
         int lengthSoFar,
-        int[] result) {
-        
-        // similar to tracking longest consecutive sequence in the array
-        //Each worker should know the previous value (parents value)
-        
+        int[] result
+    ) {
+
+        // we need to know the parent value to check to make sure we have the longest path
+
         if(node.val == parentValue + 1) {
-            
-            lengthSoFar += 1;
-            
-        } else {
-            
+            lengthSoFar = lengthSoFar + 1;
+        }else {
             lengthSoFar = 1;
         }
-        
+
+        //update the global max 
         if(lengthSoFar > result[0]) {
             result[0] = lengthSoFar;
         }
-        
-        //BaseCase
-        
+
+        //Base case 
+
         if(node.left == null && node.right == null) {
-               ; 
+            //Do nothing
+            ;
         }
-        
+
         //Recursive case 
-        
         if(node.left != null) {
             dfs(node.left,node.val,lengthSoFar,result);
         }
-        
+
         if(node.right != null) {
-            dfs(node.right,node.val,lengthSoFar, result);
+            dfs(node.right,node.val,lengthSoFar,result);
         }
-                
     }
 }
