@@ -1,41 +1,48 @@
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
-        
-        var results = new ArrayList<List<Integer>>();
-        
+
+        var result = new ArrayList<List<Integer>>();
+
+        //slate 
         var slate = new ArrayList<Integer>();
         
-        helper(nums,0,slate,results);
-        
-        return results;
-                
+        //backtracking Solution
+
+        backtrack(nums,0,slate,result);
+
+        return result;
     }
-    
-    void helper(
-        int[] input,
+
+    private void backtrack(
+        int[] nums,
         int pos,
         List<Integer> slate,
-        List<List<Integer>> results
+        List<List<Integer>> result
     ) {
-        
-        // Base case
-        if(pos == input.length) {
-            results.add(new ArrayList<>(slate));
+
+        //Base case is the leaf node 
+        // If the size of the array is reached we know its leaf 
+
+        if(pos == nums.length) {
+            result.add(new ArrayList<>(slate));
             return;
         }
-        
-        //Recursive cases 
-        int element = input[pos];
-        
-        //include the element
+
+        // Recursive case - two cases 
+        // case 1 - we ignore the current node 
+
+        // we do nothing here 
+        backtrack(nums, pos+1, slate, result);
+
+        //Case 2 where we add the element 
+        int element = nums[pos];
         slate.add(element);
-        helper(input,pos+1,slate,results);
-        slate.remove(slate.size() -1 );
-        
-        //exclude the element
-        
-        helper(input,pos+1,slate, results);
-        
-        
+
+        backtrack(nums, pos+1, slate, result);
+
+        //bring back the position to original value 
+        //This is equal to removing the last element
+        slate.remove(slate.size() - 1);
+
     }
 }
