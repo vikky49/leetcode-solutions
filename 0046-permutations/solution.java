@@ -1,56 +1,41 @@
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
+
+     //For all the exhaustive problems we need two things 
       
-       List<List<Integer>> result = new ArrayList<>();
+    var result = new ArrayList<List<Integer>>();
     
-       List<Integer> slate = new ArrayList<>();
-       boolean[] used = new boolean[nums.length];
-       backtrack(
-           nums,
-           result,
-           slate,
-           used
-       );
-      
-       return result;
+    //A temporary snapshot of the data for the dfs
+
+    var slate = new ArrayList<Integer>();
+
+     backtrack(nums,0,slate,result);
+
+     return result;
         
     }
-    
+
     private void backtrack(
-      int[] nums,
-      List<List<Integer>> result,
-      List<Integer> slate,
-      boolean[] used
+        int[] nums,
+        int pos,
+        List<Integer> slate,
+        List<List<Integer>> result
     ) {
-        
-        if(slate.size() == nums.length) {
+
+        //Base case 
+
+        if(nums.length == pos) {
             result.add(new ArrayList<Integer>(slate));
             return;
         }
-        
-        for(int i = 0; i < nums.length; i++) {
-            if(used[i]) {
-                continue;
+
+        //Recursive case 
+        for(int i = 0 ; i < nums.length ; i++) {
+            if(!slate.contains(nums[i])) {
+                slate.add(nums[i]);
+                backtrack(nums, pos+1, slate, result);
+                slate.remove(slate.size() - 1);
             }
-            
-            used[i] = true;
-            slate.add(nums[i]);
-            
-            backtrack(
-                nums,
-                result,
-                slate,
-                used
-            );
-            
-           //backtrack  
-           slate.removeLast();
-           
-           used[i] = false;
-          
         }
-        
     }
-    
-        
 }
