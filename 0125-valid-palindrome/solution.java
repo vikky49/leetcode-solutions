@@ -1,25 +1,19 @@
 class Solution {
     public boolean isPalindrome(String s) {
-        Stack<Character> stack = new Stack<>();
-        Queue<Character> queue = new LinkedList<>();
-
-        char[] charArray = s.toCharArray();
-
-        for(Character ch : charArray) {
-            if(Character.isLetterOrDigit(ch)) {
-                char normalized = Character.toLowerCase(ch);
-                stack.push(normalized);
-                queue.offer(normalized);
-            }
+       for(int left=0, right = s.length()-1; left < right; left++ ,right --) {
+        while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
+            left++;
+        }
+        while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
+            right --;
         }
 
-        //compare the queue with stack 
+        if(Character.toLowerCase(s.charAt(left)) 
+            != Character.toLowerCase(s.charAt(right))) {
+            return false;
+        }        
 
-        while (!stack.isEmpty()) {
-            if(stack.pop() != queue.poll()) {
-                return false;
-            }
-        }
-        return true;        
+       }
+       return true;        
     }
 }
