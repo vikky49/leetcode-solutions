@@ -1,26 +1,22 @@
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         int n = nums.length;
+        //store the result
         int[] result = new int[n];
 
-        //Step1: Calculate the left side of the things 
-        result[0] = 1; 
-        int i = 1; 
-        // since we start with the left most we ignore the zeroth index as there is nothing before that number to Calculate
-        while(i < n) {
+        //Lets calculate the left product first
+        result[0] = 1;
+        for(int i = 1; i < n ; i++) {
             result[i] = result[i-1] * nums[i-1];
-            i++; 
         }
 
-        //Do the right product 
+        //calculate the right product 
         int rightProduct = 1;
-        i = n-1;
-        while (i >= 0) {
-            //First multiply the right numner 
+        for (int i = n-1; i >=0 ; i --) {
             result[i] = result[i] * rightProduct;
             rightProduct = rightProduct * nums[i];
-            i--;
         }
+        
         return result;
     }
 }
