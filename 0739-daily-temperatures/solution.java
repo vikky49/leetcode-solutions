@@ -1,25 +1,20 @@
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
-        
+
         int n = temperatures.length;
-        //answer array to the size of temperatures length
-        int[] answer = new int[n];
-        
-        Deque<Integer> stack = new ArrayDeque<>();
-        
-        for(int curDay = 0 ; curDay < n ; curDay++) {
-            
-            int currentTemp = temperatures[curDay];
-            
-            while(!stack.isEmpty() && temperatures[stack.peek()] < currentTemp) {
-                int prevDay = stack.pop();
-                answer[prevDay] = curDay - prevDay;
+        int[] result = new int[n];
+
+        Stack<Integer> stack = new Stack<>();
+
+        for (int i = 0; i < n; i++) {
+            // Logic to find the order and pop 
+            while (!stack.isEmpty() && temperatures[stack.peek()] < temperatures[i]) {
+                int prevIndex = stack.pop();
+                result[prevIndex] = i - prevIndex;
             }
-            
-            stack.push(curDay);
+            stack.push(i);
         }
-        
-        return answer;
-        
+        return result;
     }
+
 }
