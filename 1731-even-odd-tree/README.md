@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/even-odd-tree">Even Odd Tree</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>A binary tree is named <strong>Even-Odd</strong> if it meets the following conditions:</p>
+<p>A binary tree is named <strong>Even-Odd</strong> if it meets the following conditions:</p>
 
 <ul>
 	<li>The root of the binary tree is at level index <code>0</code>, its children are at level index <code>1</code>, their children are at level index <code>2</code>, etc.</li>
