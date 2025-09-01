@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected">Amount of Time for Binary Tree to Be Infected</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>You are given the <code>root</code> of a binary tree with <strong>unique</strong> values, and an integer <code>start</code>. At minute <code>0</code>, an <strong>infection</strong> starts from the node with value <code>start</code>.</p>
+<p>You are given the <code>root</code> of a binary tree with <strong>unique</strong> values, and an integer <code>start</code>. At minute <code>0</code>, an <strong>infection</strong> starts from the node with value <code>start</code>.</p>
 
 <p>Each minute, a node becomes infected if:</p>
 
