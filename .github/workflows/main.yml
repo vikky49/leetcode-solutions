@@ -12,59 +12,78 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Debug - Test PAT Token
+      - name: Debug - Test PAT Token Repository Access
         run: |
-          echo "🔍 Debugging PAT_TOKEN permissions..."
+          echo "🔍 Testing PAT_TOKEN repository permissions..."
           
-          # Test basic authentication
-          echo "Testing basic authentication..."
-          auth_response=$(curl -s -w "%{http_code}" -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
-                         https://api.github.com/user)
-          auth_code=${auth_response: -3}
-          echo "Auth Status: $auth_code"
+          # Check if we can access the repository
+          echo "Testing repository read access..."
+          repo_response=$(curl -s -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+                         "https://api.github.com/repos/${{ github.repository }}")
           
-          if [ "$auth_code" != "200" ]; then
-            echo "❌ PAT_TOKEN authentication failed"
-            echo "Response: ${auth_response%???}"
-            exit 1
-          fi
+          echo "Repository info:"
+          echo "$repo_response" | jq -r '.name, .full_name, .private'
           
-          # Test repository access
-          echo "Testing repository access..."
-          repo_response=$(curl -s -w "%{http_code}" -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
-                         https://api.github.com/repos/${{ github.repository }})
-          repo_code=${repo_response: -3}
-          echo "Repo Access Status: $repo_code"
+          # Check repository permissions specifically
+          echo "Checking repository permissions..."
+          echo "$repo_response" | jq '.permissions'
           
-          if [ "$repo_code" != "200" ]; then
-            echo "❌ PAT_TOKEN cannot access repository"
-            echo "Response: ${repo_response%???}"
-            exit 1
-          fi
+          # Test if we can write to repository (create/update file)
+          echo "Testing write access by creating a test file..."
+          test_content=$(echo "Test file created at $(date)" | base64 -w 0)
           
-          # Check token scopes
-          echo "Checking token scopes..."
-          curl -s -I -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
-               https://api.github.com/user | grep -i "x-oauth-scopes"
+          create_response=$(curl -s -w "%{http_code}" \
+            -X PUT \
+            -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${{ github.repository }}/contents/.github/test-write-access.txt" \
+            -d "{
+              \"message\": \"Test write access\",
+              \"content\": \"$test_content\"
+            }")
           
-          echo "✅ PAT_TOKEN appears to be working correctly"
-
-      - name: Debug - Test Repository Write Access
-        run: |
-          echo "🔍 Testing write permissions..."
+          create_code=${create_response: -3}
+          echo "Create file response code: $create_code"
           
-          # Test if we can read repository contents
-          contents_response=$(curl -s -w "%{http_code}" -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
-                             https://api.github.com/repos/${{ github.repository }}/contents)
-          contents_code=${contents_response: -3}
-          echo "Contents Access Status: $contents_code"
-          
-          if [ "$contents_code" != "200" ]; then
-            echo "❌ Cannot read repository contents"
-            echo "Response: ${contents_response%???}"
+          if [ "$create_code" == "201" ]; then
+            echo "✅ Write access confirmed - can create files"
+            
+            # Clean up test file
+            sha=$(echo "${create_response%???}" | jq -r '.content.sha')
+            curl -s -X DELETE \
+              -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/contents/.github/test-write-access.txt" \
+              -d "{
+                \"message\": \"Remove test file\",
+                \"sha\": \"$sha\"
+              }"
+            echo "Test file cleaned up"
           else
-            echo "✅ Can read repository contents"
+            echo "❌ Write access failed"
+            echo "Response: ${create_response%???}"
           fi
+
+      - name: Debug - Check Token Scopes
+        run: |
+          echo "🔍 Checking OAuth scopes..."
+          scope_response=$(curl -s -I -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+                          "https://api.github.com/user")
+          
+          echo "OAuth scopes granted to token:"
+          echo "$scope_response" | grep -i "x-oauth-scopes" | cut -d: -f2 | tr ',' '\n' | sed 's/^ */- /'
+          
+          echo "OAuth scopes accepted for this endpoint:"
+          echo "$scope_response" | grep -i "x-accepted-oauth-scopes" | cut -d: -f2 | tr ',' '\n' | sed 's/^ */- /'
+
+      - name: Debug - Compare with GITHUB_TOKEN
+        run: |
+          echo "🔍 Comparing with built-in GITHUB_TOKEN..."
+          
+          github_repo_response=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                                "https://api.github.com/repos/${{ github.repository }}")
+          
+          echo "GITHUB_TOKEN permissions:"
+          echo "$github_repo_response" | jq '.permissions'
 
       - name: Sync LeetCode Solutions
         uses: joshcai/leetcode-sync@v1.7
@@ -73,13 +92,18 @@ jobs:
           leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
           leetcode-session: ${{ secrets.LEETCODE_SESSION }}
 
-      - name: Debug - Post-Sync Status
+      - name: Debug - Post-failure Analysis
         if: failure()
         run: |
-          echo "🔍 LeetCode sync failed, checking final status..."
+          echo "🔍 Sync failed - analyzing possible causes..."
+          echo ""
+          echo "Common causes for 'Resource not accessible by personal access token':"
+          echo "1. Token missing 'repo' or 'public_repo' scope"
+          echo "2. Token missing 'workflow' scope (if modifying .github/ files)"
+          echo "3. Repository is private but token only has public_repo scope"
+          echo "4. Organization restrictions on personal access tokens"
+          echo "5. Token expired or was regenerated"
+          echo ""
           echo "Repository: ${{ github.repository }}"
-          echo "Workflow run: ${{ github.run_id }}"
-          echo "If auth tests passed but sync failed, the issue might be:"
-          echo "1. LeetCode credentials (CSRF token or session)"
-          echo "2. Specific API endpoints the action tries to access"
-          echo "3. Rate limiting"
+          echo "Event: ${{ github.event_name }}"
+          echo "Actor: ${{ github.actor }}"
