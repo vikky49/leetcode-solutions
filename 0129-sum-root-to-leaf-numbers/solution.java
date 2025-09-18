@@ -14,39 +14,47 @@
  * }
  */
 class Solution {
-    
+    private int totalCount = 0;
+    private List<Integer> slate = new ArrayList<>();
+
     public int sumNumbers(TreeNode root) {
-        int[] totalSum = {0};
-        StringBuilder sb = new StringBuilder();
-         dfs(root,sb, totalSum);
-         return totalSum[0];
-                  
+
+        if (root == null) {
+            return 0;
+        }
+        dfs(slate, root);
+        return totalCount;
+
     }
 
     private void dfs(
-        TreeNode node, 
-        StringBuilder currentPath, 
-        int[] totalSum) {
-       
-         if(node == null) {
-            return;
-         }
-          
-          currentPath.append(node.val);
+            List<Integer> slate,
+            TreeNode node) {
 
-            //Base case - if leaf node
+        //add to the slate 
+        slate.add(node.val);
 
-            if(node.left == null && node.right == null) {
-                totalSum[0] += Integer.parseInt(currentPath.toString());
-                currentPath.deleteCharAt(currentPath.length()-1);
-                return;
+        //Base case 
+        if (node.left == null && node.right == null) {
+            long pathNum = 0;
+            for (int i = 0; i < slate.size(); i++) {
+                pathNum = pathNum * 10 + slate.get(i);
+            }
+            totalCount += pathNum;
+        } else {
+
+            if (node.left != null) {
+                dfs(slate, node.left);
             }
 
-            dfs(node.left, currentPath, totalSum);
-            dfs(node.right,currentPath,totalSum);
-
-           //backtracking 
-           currentPath.deleteCharAt(currentPath.length()-1);
+            if (node.right != null) {
+                dfs(slate, node.right);
+            }
 
         }
+
+        //backtrack
+        slate.removeLast();
+
+    }
 }
