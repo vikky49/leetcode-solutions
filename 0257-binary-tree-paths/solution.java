@@ -15,38 +15,53 @@
  */
 class Solution {
     public List<String> binaryTreePaths(TreeNode root) {
-        //Edge case
+
         if(root == null) {
-           return Collections.emptyList();
+            return List.of();
         }
-        List<String> paths = new LinkedList<>();
-        buildPaths(root,"",paths);
-        return paths;        
+
+        List<Integer> slate = new ArrayList<>();
+        List<String> paths = new ArrayList<>();
+
+        dfs(root,slate,paths);
+
+        return paths;
+
+                 
     }
 
-    private void buildPaths(
-        TreeNode root,
-        String path,
+    private void dfs(
+        TreeNode node,
+        List<Integer> slate,
         List<String> paths
     ) {
-     
-     // add the first element to the path
-     path += Integer.toString(root.val);
 
-     //Base Case  (leaf nodes)
-      if(root.left == null && root.right == null) {
-          paths.add(path);
-      }
+        if(node == null) {
+            return;
+        }
 
-      //Recursive case
-      path += "->";
-      if(root.left != null) {
-        buildPaths(root.left, path, paths);
-      }
+        //add the current value to the current paths
+        slate.add(node.val);
 
-      if(root.right != null) {
-        buildPaths(root.right, path, paths);
-      }
+        //Base case 
+        if(node.left == null && node.right == null) {
+            //This is leaf node so lets calculate the path here
+            StringBuilder sb = new StringBuilder();
+            for(int i = 0; i < slate.size(); i++) {
+                if(i > 0) {
+                    sb.append("->");
+                }
+                sb.append(slate.get(i));
+            }
+
+            paths.add(sb.toString());
+        } else {
+            dfs(node.left, slate, paths);
+            dfs(node.right, slate, paths);
+        }
+
+        //Backtrack
+        slate.removeLast();
 
     }
 }
