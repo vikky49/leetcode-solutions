@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree">Longest ZigZag Path in a Binary Tree</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>You are given the <code>root</code> of a binary tree.</p>
+<p>You are given the <code>root</code> of a binary tree.</p>
 
 <p>A ZigZag path for a binary tree is defined as follow:</p>
 
