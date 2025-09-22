@@ -1,41 +1,40 @@
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-
-        var results = new ArrayList<List<Integer>>();
-        var combo = new LinkedList<Integer>();
-        helper(target,combo,0,candidates,results);
-        return results;
-    }
-
-    private void helper(
-            int remain,
-            LinkedList<Integer> combo,
-            int start,
-            int[] candidates,
-            List<List<Integer>> results
-    ) {
-
-        //Back Tracking case or base case
-          if(remain == 0) {
-              results.add(new ArrayList<>(combo));
-              return;
-          } else if (remain < 0) {
-              return;
-          }
-
-        //Recursive case
-
-        for(int i = start ; i < candidates.length ; i++) {
-            combo.add(candidates[i]);
-            helper(
-                    remain - candidates[i],
-                    combo,
-                    i,
-                    candidates,
-                    results);
-            combo.removeLast();
-        }
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> slate = new ArrayList<>();
+        
+        backtrack(result,slate,candidates,target,0);
+        
+        return result;
         
     }
+    
+    private void backtrack(
+        List<List<Integer>> result,
+        List<Integer> slate,
+        int[] candidates,
+        int target,
+        int start
+    ) {
+        
+        //Base case 
+        if(target == 0) {
+         result.add(new ArrayList<>(slate));
+         return;
+        }
+        
+        if(target < 0) {
+            return;
+        }
+        
+        
+        for(int i=start ; i < candidates.length; i++) {
+            
+            slate.add(candidates[i]);
+            
+            backtrack(result,slate,candidates,target-candidates[i],i);
+            
+            slate.removeLast();
+        }
+    }
 }
-
