@@ -14,51 +14,30 @@
  * }
  */
 class Solution {
-   
-   private int diameter;
-
     public int diameterOfBinaryTree(TreeNode root) {
-    
-        //Edge case
-        if(root == null) {
-            return 0;
-        }
-        dfs(root);
-        return diameter;
+        int[] diameter = new int[] {0} ;
+        height(root, diameter);
+        return diameter[0];
         
     }
 
-    private int dfs(
-        TreeNode node) {
+    int height(TreeNode node, int[] diameter) {
 
-            //Base case 
-            // if the node is the leaf
-            if(node.left == null && node.right == null) {
-                return 0;
-            }
-
-            //Recursive case 
-            
-            int height = 0;
-            int longestPath = 0;
-
-            if(node.left != null) {
-                int leftHeight = 1 + dfs(node.left);
-                height = Math.max(height,leftHeight);
-                longestPath = leftHeight;
-            }
-
-            if(node.right != null) {
-              int rightHeight = 1 + dfs(node.right);
-              height = Math.max(height,rightHeight);
-              longestPath += rightHeight;
-            }
-
-            if(longestPath > diameter) {
-                diameter = longestPath;
-            }
-
-            return height;
-
+        //Base case 
+        if(node == null) {
+            return 0;
         }
+
+        int leftHeight = height(node.left, diameter);
+        int rightHeight = height(node.right, diameter);
+
+        int localDia = leftHeight + rightHeight;
+
+        if(localDia > diameter[0] ) {
+            diameter[0] = localDia;
+        }
+
+        return 1 + Math.max(leftHeight, rightHeight);
+
+    }
 }
