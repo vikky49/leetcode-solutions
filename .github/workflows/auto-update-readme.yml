@@ -1,0 +1,182 @@
+name: Auto Update README
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.java'
+      - '**/*.py'
+      - '**/*.cpp'
+      - '**/*.js'
+      - '**/*.ts'
+      - '**/*.c'
+      - '**/*.go'
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Create scripts directory
+      run: mkdir -p scripts
+    
+    - name: Add README generator script
+      run: |
+        cat > scripts/generate_readme.py << 'EOF'
+        #!/usr/bin/env python3
+        import os
+        import re
+        from pathlib import Path
+        from datetime import datetime
+
+        class LeetCodeReadmeGenerator:
+            def __init__(self, repo_root="."):
+                self.repo_root = Path(repo_root)
+                self.solutions = []
+                self.github_repo = "vikky49/leetcode-solutions"
+            
+            def scan_solutions(self):
+                pattern = re.compile(r'^(\d{4})-(.+)$')
+                
+                for item in self.repo_root.iterdir():
+                    if item.is_dir() and pattern.match(item.name):
+                        match = pattern.match(item.name)
+                        problem_number = match.group(1)
+                        problem_name = match.group(2)
+                        
+                        solution_files = []
+                        for ext in ['*.java', '*.py', '*.cpp', '*.js', '*.ts', '*.c', '*.go']:
+                            solution_files.extend(item.glob(ext))
+                        
+                        if solution_files:
+                            solution_data = {
+                                'number': problem_number,
+                                'name': problem_name,
+                                'title': problem_name.replace('-', ' ').title(),
+                                'leetcode_url': f"https://leetcode.com/problems/{problem_name}/",
+                                'solutions': []
+                            }
+                            
+                            for solution_file in solution_files:
+                                solution_data['solutions'].append({
+                                    'file': solution_file.name,
+                                    'language': self.get_language_from_extension(solution_file.suffix),
+                                    'github_url': f"https://github.com/{self.github_repo}/blob/main/{item.name}/{solution_file.name}"
+                                })
+                            
+                            self.solutions.append(solution_data)
+                
+                self.solutions.sort(key=lambda x: int(x['number']))
+            
+            def get_language_from_extension(self, ext):
+                language_map = {
+                    '.java': 'Java',
+                    '.py': 'Python',
+                    '.cpp': 'C++',
+                    '.c': 'C',
+                    '.js': 'JavaScript',
+                    '.ts': 'TypeScript',
+                    '.go': 'Go'
+                }
+                return language_map.get(ext, ext[1:].upper())
+            
+            def generate_readme_content(self):
+                content = []
+                
+                # Header
+                content.append("# LeetCode Solutions")
+                content.append("")
+                content.append("My solutions to LeetCode problems in multiple programming languages.")
+                content.append("")
+                
+                # Statistics
+                total_problems = len(self.solutions)
+                language_count = {}
+                for solution in self.solutions:
+                    for sol in solution['solutions']:
+                        lang = sol['language']
+                        language_count[lang] = language_count.get(lang, 0) + 1
+                
+                content.append("## 📊 Statistics")
+                content.append("")
+                content.append(f"- **Total Problems**: {total_problems}")
+                for lang, count in sorted(language_count.items(), key=lambda x: x[1], reverse=True):
+                    content.append(f"- **{lang}**: {count} solutions")
+                content.append("")
+                
+                # Solutions table
+                content.append("## 🚀 Solutions")
+                content.append("")
+                content.append("| # | Problem | Solutions |")
+                content.append("|---|---------|-----------|")
+                
+                for solution in self.solutions:
+                    problem_link = f"[{solution['number']}. {solution['title']}]({solution['leetcode_url']})"
+                    
+                    solution_links = []
+                    for sol in solution['solutions']:
+                        solution_links.append(f"[{sol['language']}]({sol['github_url']})")
+                    
+                    solutions_cell = " • ".join(solution_links)
+                    content.append(f"| {solution['number']} | {problem_link} | {solutions_cell} |")
+                
+                # Footer
+                content.append("")
+                content.append("## 🛠️ Usage")
+                content.append("")
+                content.append("1. Click on problem name to view on LeetCode")
+                content.append("2. Click on language to view solution code")
+                content.append("3. Clone repo to run solutions locally")
+                content.append("")
+                content.append(f"*Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*")
+                
+                return "\n".join(content)
+            
+            def update_readme(self):
+                content = self.generate_readme_content()
+                readme_path = self.repo_root / "README.md"
+                
+                with open(readme_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+
+        if __name__ == "__main__":
+            generator = LeetCodeReadmeGenerator()
+            generator.scan_solutions()
+            generator.update_readme()
+            print("README updated successfully!")
+        EOF
+    
+    - name: Generate README
+      run: python scripts/generate_readme.py
+    
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Commit and push changes
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add README.md
+        git commit -m "🤖 Auto-update README with latest solutions"
+        git push
