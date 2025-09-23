@@ -10,18 +10,22 @@
 
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        while (root != null) {
-            // if both the p and q value is smaller than root the
-            // LCA lies in the left subtree
 
-            if (root.val > p.val && root.val > q.val) {
-                root = root.left;
-            } else if (root.val < p.val && root.val < q.val) {
-                root = root.right;
-            } else {
-                break;
-            }
+        if(root == null) {
+            return null;
         }
+
+        //if both p and q are on the left side of the tree
+        if(p.val < root.val && q.val < root.val) {
+            return lowestCommonAncestor(root.left, p, q);
+        }
+
+        //if both p and q are on the right side of the tree
+        if(p.val > root.val && q.val > root.val) {
+            return lowestCommonAncestor(root.right, p, q);
+        }
+
         return root;
+        
     }
 }
