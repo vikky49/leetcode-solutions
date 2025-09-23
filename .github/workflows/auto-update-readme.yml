@@ -1,4 +1,4 @@
-name: Auto Update README
+name: Auto Update README by Problem Type
 
 on:
   push:
@@ -48,6 +48,18 @@ jobs:
                 self.repo_root = Path(repo_root)
                 self.solutions = []
                 self.github_repo = "vikky49/leetcode-solutions"
+                self.problem_types = {
+                    'array': 'Arrays',
+                    'string': 'Strings',
+                    'linked-list': 'Linked Lists',
+                    'tree': 'Trees',
+                    'dp': 'Dynamic Programming',
+                    'backtracking': 'Backtracking',
+                    'graph': 'Graphs',
+                    'math': 'Math',
+                    'design': 'Design',
+                    'bit': 'Bit Manipulation'
+                }
             
             def scan_solutions(self):
                 pattern = re.compile(r'^(\d{4})-(.+)$')
@@ -57,6 +69,9 @@ jobs:
                         match = pattern.match(item.name)
                         problem_number = match.group(1)
                         problem_name = match.group(2)
+                        
+                        # Determine problem type from directory name
+                        problem_type = self.determine_problem_type(problem_name)
                         
                         solution_files = []
                         for ext in ['*.java', '*.py', '*.cpp', '*.js', '*.ts', '*.c', '*.go']:
@@ -68,6 +83,7 @@ jobs:
                                 'name': problem_name,
                                 'title': problem_name.replace('-', ' ').title(),
                                 'leetcode_url': f"https://leetcode.com/problems/{problem_name}/",
+                                'type': problem_type,
                                 'solutions': []
                             }
                             
@@ -81,6 +97,14 @@ jobs:
                             self.solutions.append(solution_data)
                 
                 self.solutions.sort(key=lambda x: int(x['number']))
+            
+            def determine_problem_type(self, problem_name):
+                # Map problem name to type based on keywords
+                problem_name_lower = problem_name.lower()
+                for key, value in self.problem_types.items():
+                    if key in problem_name_lower:
+                        return value
+                return 'Other'
             
             def get_language_from_extension(self, ext):
                 language_map = {
@@ -100,16 +124,19 @@ jobs:
                 # Header
                 content.append("# LeetCode Solutions")
                 content.append("")
-                content.append("My solutions to LeetCode problems in multiple programming languages.")
+                content.append("My solutions to LeetCode problems in multiple programming languages, organized by problem type.")
                 content.append("")
                 
                 # Statistics
                 total_problems = len(self.solutions)
                 language_count = {}
+                type_count = {}
                 for solution in self.solutions:
                     for sol in solution['solutions']:
                         lang = sol['language']
                         language_count[lang] = language_count.get(lang, 0) + 1
+                    problem_type = solution['type']
+                    type_count[problem_type] = type_count.get(problem_type, 0) + 1
                 
                 content.append("## 📊 Statistics")
                 content.append("")
@@ -118,24 +145,38 @@ jobs:
                     content.append(f"- **{lang}**: {count} solutions")
                 content.append("")
                 
-                # Solutions table
-                content.append("## 🚀 Solutions")
+                # Solutions by type
+                content.append("## 🗂️ Solutions by Problem Type")
                 content.append("")
-                content.append("| # | Problem | Solutions |")
-                content.append("|---|---------|-----------|")
                 
+                # Group solutions by type
+                solutions_by_type = {}
                 for solution in self.solutions:
-                    problem_link = f"[{solution['number']}. {solution['title']}]({solution['leetcode_url']})"
+                    if solution['type'] not in solutions_by_type:
+                        solutions_by_type[solution['type']] = []
+                    solutions_by_type[solution['type']].append(solution)
+                
+                # Sort types by count
+                sorted_types = sorted(solutions_by_type.keys(), key=lambda x: type_count.get(x, 0), reverse=True)
+                
+                for problem_type in sorted_types:
+                    content.append(f"### {problem_type}")
+                    content.append("")
+                    content.append("| # | Problem | Solutions |")
+                    content.append("|---|---------|-----------|")
                     
-                    solution_links = []
-                    for sol in solution['solutions']:
-                        solution_links.append(f"[{sol['language']}]({sol['github_url']})")
-                    
-                    solutions_cell = " • ".join(solution_links)
-                    content.append(f"| {solution['number']} | {problem_link} | {solutions_cell} |")
+                    for solution in solutions_by_type[problem_type]:
+                        problem_link = f"[{solution['number']}. {solution['title']}]({solution['leetcode_url']})"
+                        
+                        solution_links = []
+                        for sol in solution['solutions']:
+                            solution_links.append(f"[{sol['language']}]({sol['github_url']})")
+                        
+                        solutions_cell = " • ".join(solution_links)
+                        content.append(f"| {solution['number']} | {problem_link} | {solutions_cell} |")
+                    content.append("")
                 
                 # Footer
-                content.append("")
                 content.append("## 🛠️ Usage")
                 content.append("")
                 content.append("1. Click on problem name to view on LeetCode")
@@ -178,5 +219,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add README.md
-        git commit -m "🤖 Auto-update README with latest solutions"
+        git commit -m "🤖 Auto-update README with latest solutions organized by problem type"
         git push
