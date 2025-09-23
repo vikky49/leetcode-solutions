@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-My solutions to LeetCode problems in multiple programming languages.
+My solutions to LeetCode problems in multiple programming languages, organized by problem type.
 
 ## 📊 Statistics
 
@@ -8,13 +8,14 @@ My solutions to LeetCode problems in multiple programming languages.
 - **Java**: 185 solutions
 - **Python**: 6 solutions
 
-## 🚀 Solutions
+## 🗂️ Solutions by Problem Type
+
+### Other
 
 | # | Problem | Solutions |
 |---|---------|-----------|
 | 0001 | [0001. Two Sum](https://leetcode.com/problems/two-sum/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0001-two-sum/solution.java) |
 | 0002 | [0002. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0002-add-two-numbers/solution.java) |
-| 0003 | [0003. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0003-longest-substring-without-repeating-characters/solution.java) |
 | 0006 | [0006. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0006-zigzag-conversion/solution.java) |
 | 0011 | [0011. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0011-container-with-most-water/solution.java) |
 | 0012 | [0012. Integer To Roman](https://leetcode.com/problems/integer-to-roman/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0012-integer-to-roman/solution.java) |
@@ -28,7 +29,6 @@ My solutions to LeetCode problems in multiple programming languages.
 | 0022 | [0022. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0022-generate-parentheses/solution.java) |
 | 0023 | [0023. Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0023-merge-k-sorted-lists/solution.java) |
 | 0024 | [0024. Swap Nodes In Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0024-swap-nodes-in-pairs/solution.java) |
-| 0026 | [0026. Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0026-remove-duplicates-from-sorted-array/solution.java) |
 | 0031 | [0031. Next Permutation](https://leetcode.com/problems/next-permutation/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0031-next-permutation/solution.java) |
 | 0039 | [0039. Combination Sum](https://leetcode.com/problems/combination-sum/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0039-combination-sum/solution.java) |
 | 0046 | [0046. Permutations](https://leetcode.com/problems/permutations/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0046-permutations/solution.java) |
@@ -41,75 +41,32 @@ My solutions to LeetCode problems in multiple programming languages.
 | 0077 | [0077. Combinations](https://leetcode.com/problems/combinations/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0077-combinations/solution.java) |
 | 0078 | [0078. Subsets](https://leetcode.com/problems/subsets/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0078-subsets/solution.java) |
 | 0079 | [0079. Word Search](https://leetcode.com/problems/word-search/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0079-word-search/solution.java) |
-| 0088 | [0088. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0088-merge-sorted-array/solution.java) |
-| 0094 | [0094. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0094-binary-tree-inorder-traversal/solution.java) |
-| 0098 | [0098. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0098-validate-binary-search-tree/solution.java) |
-| 0100 | [0100. Same Tree](https://leetcode.com/problems/same-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0100-same-tree/solution.java) |
-| 0101 | [0101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0101-symmetric-tree/solution.java) |
-| 0102 | [0102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0102-binary-tree-level-order-traversal/solution.java) |
-| 0103 | [0103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0103-binary-tree-zigzag-level-order-traversal/solution.java) |
-| 0104 | [0104. Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0104-maximum-depth-of-binary-tree/solution.java) |
-| 0106 | [0106. Construct Binary Tree From Inorder And Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/solution.java) |
-| 0107 | [0107. Binary Tree Level Order Traversal Ii](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0107-binary-tree-level-order-traversal-ii/solution.java) |
-| 0108 | [0108. Convert Sorted Array To Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0108-convert-sorted-array-to-binary-search-tree/solution.java) |
-| 0111 | [0111. Minimum Depth Of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0111-minimum-depth-of-binary-tree/solution.java) |
 | 0112 | [0112. Path Sum](https://leetcode.com/problems/path-sum/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0112-path-sum/solution.java) |
 | 0113 | [0113. Path Sum Ii](https://leetcode.com/problems/path-sum-ii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0113-path-sum-ii/solution.java) • [Python](https://github.com/vikky49/leetcode-solutions/blob/main/0113-path-sum-ii/solution.py) |
-| 0114 | [0114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0114-flatten-binary-tree-to-linked-list/solution.java) |
 | 0116 | [0116. Populating Next Right Pointers In Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0116-populating-next-right-pointers-in-each-node/solution.java) |
 | 0121 | [0121. Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0121-best-time-to-buy-and-sell-stock/solution.java) |
-| 0124 | [0124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0124-binary-tree-maximum-path-sum/solution.java) |
 | 0125 | [0125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0125-valid-palindrome/solution.java) |
 | 0129 | [0129. Sum Root To Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0129-sum-root-to-leaf-numbers/solution.java) |
 | 0130 | [0130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0130-surrounded-regions/solution.java) |
 | 0138 | [0138. Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0138-copy-list-with-random-pointer/solution.java) |
-| 0141 | [0141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0141-linked-list-cycle/solution.java) |
 | 0143 | [0143. Reorder List](https://leetcode.com/problems/reorder-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0143-reorder-list/solution.java) |
-| 0144 | [0144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0144-binary-tree-preorder-traversal/solution.java) |
 | 0146 | [0146. Lru Cache](https://leetcode.com/problems/lru-cache/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0146-lru-cache/solution.java) |
 | 0150 | [0150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0150-evaluate-reverse-polish-notation/solution.java) |
-| 0151 | [0151. Reverse Words In A String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0151-reverse-words-in-a-string/solution.java) |
-| 0159 | [0159. Longest Substring With At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0159-longest-substring-with-at-most-two-distinct-characters/solution.java) |
-| 0160 | [0160. Intersection Of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0160-intersection-of-two-linked-lists/solution.java) |
 | 0162 | [0162. Find Peak Element](https://leetcode.com/problems/find-peak-element/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0162-find-peak-element/solution.java) |
-| 0167 | [0167. Two Sum Ii   Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii---input-array-is-sorted/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0167-two-sum-ii---input-array-is-sorted/solution.java) |
-| 0173 | [0173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0173-binary-search-tree-iterator/solution.java) |
-| 0186 | [0186. Reverse Words In A String Ii](https://leetcode.com/problems/reverse-words-in-a-string-ii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0186-reverse-words-in-a-string-ii/solution.java) |
 | 0198 | [0198. House Robber](https://leetcode.com/problems/house-robber/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0198-house-robber/solution.java) |
-| 0199 | [0199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0199-binary-tree-right-side-view/solution.java) |
 | 0200 | [0200. Number Of Islands](https://leetcode.com/problems/number-of-islands/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0200-number-of-islands/solution.java) |
-| 0206 | [0206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0206-reverse-linked-list/solution.java) |
 | 0207 | [0207. Course Schedule](https://leetcode.com/problems/course-schedule/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0207-course-schedule/solution.java) |
-| 0209 | [0209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0209-minimum-size-subarray-sum/solution.java) |
-| 0215 | [0215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0215-kth-largest-element-in-an-array/solution.java) |
 | 0224 | [0224. Basic Calculator](https://leetcode.com/problems/basic-calculator/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0224-basic-calculator/solution.java) |
-| 0226 | [0226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0226-invert-binary-tree/solution.java) • [Python](https://github.com/vikky49/leetcode-solutions/blob/main/0226-invert-binary-tree/solution.py) |
 | 0227 | [0227. Basic Calculator Ii](https://leetcode.com/problems/basic-calculator-ii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0227-basic-calculator-ii/solution.java) |
 | 0228 | [0228. Summary Ranges](https://leetcode.com/problems/summary-ranges/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0228-summary-ranges/solution.java) |
 | 0230 | [0230. Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0230-kth-smallest-element-in-a-bst/solution.java) |
-| 0234 | [0234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0234-palindrome-linked-list/solution.java) |
-| 0235 | [0235. Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0235-lowest-common-ancestor-of-a-binary-search-tree/solution.java) • [Python](https://github.com/vikky49/leetcode-solutions/blob/main/0235-lowest-common-ancestor-of-a-binary-search-tree/solution.py) |
-| 0236 | [0236. Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0236-lowest-common-ancestor-of-a-binary-tree/solution.java) |
-| 0237 | [0237. Delete Node In A Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0237-delete-node-in-a-linked-list/solution.java) |
-| 0238 | [0238. Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0238-product-of-array-except-self/solution.java) |
-| 0250 | [0250. Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0250-count-univalue-subtrees/solution.java) |
 | 0252 | [0252. Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0252-meeting-rooms/solution.java) |
-| 0257 | [0257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0257-binary-tree-paths/solution.java) |
 | 0259 | [0259. 3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0259-3sum-smaller/solution.java) |
-| 0261 | [0261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0261-graph-valid-tree/solution.java) |
 | 0266 | [0266. Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0266-palindrome-permutation/solution.java) |
-| 0271 | [0271. Encode And Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0271-encode-and-decode-strings/solution.java) |
 | 0278 | [0278. First Bad Version](https://leetcode.com/problems/first-bad-version/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0278-first-bad-version/solution.java) |
 | 0279 | [0279. Perfect Squares](https://leetcode.com/problems/perfect-squares/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0279-perfect-squares/solution.java) |
 | 0280 | [0280. Wiggle Sort](https://leetcode.com/problems/wiggle-sort/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0280-wiggle-sort/solution.java) |
 | 0283 | [0283. Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0283-move-zeroes/solution.java) |
-| 0298 | [0298. Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0298-binary-tree-longest-consecutive-sequence/solution.java) • [Python](https://github.com/vikky49/leetcode-solutions/blob/main/0298-binary-tree-longest-consecutive-sequence/solution.py) |
-| 0314 | [0314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0314-binary-tree-vertical-order-traversal/solution.java) |
-| 0323 | [0323. Number Of Connected Components In An Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0323-number-of-connected-components-in-an-undirected-graph/solution.java) |
-| 0328 | [0328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0328-odd-even-linked-list/solution.java) |
-| 0340 | [0340. Longest Substring With At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0340-longest-substring-with-at-most-k-distinct-characters/solution.java) |
-| 0344 | [0344. Reverse String](https://leetcode.com/problems/reverse-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0344-reverse-string/solution.java) |
-| 0345 | [0345. Reverse Vowels Of A String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0345-reverse-vowels-of-a-string/solution.java) |
 | 0346 | [0346. Moving Average From Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0346-moving-average-from-data-stream/solution.java) |
 | 0347 | [0347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0347-top-k-frequent-elements/solution.java) |
 | 0374 | [0374. Guess Number Higher Or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0374-guess-number-higher-or-lower/solution.java) |
@@ -121,81 +78,156 @@ My solutions to LeetCode problems in multiple programming languages.
 | 0424 | [0424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0424-longest-repeating-character-replacement/solution.java) |
 | 0435 | [0435. Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0435-non-overlapping-intervals/solution.java) |
 | 0437 | [0437. Path Sum Iii](https://leetcode.com/problems/path-sum-iii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0437-path-sum-iii/solution.java) • [Python](https://github.com/vikky49/leetcode-solutions/blob/main/0437-path-sum-iii/solution.py) |
-| 0438 | [0438. Find All Anagrams In A String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0438-find-all-anagrams-in-a-string/solution.java) |
 | 0485 | [0485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0485-max-consecutive-ones/solution.java) |
+| 0605 | [0605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0605-can-place-flowers/solution.java) |
+| 0611 | [0611. Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0611-valid-triangle-number/solution.java) |
+| 0633 | [0633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0633-sum-of-square-numbers/solution.java) |
+| 0653 | [0653. Two Sum Iv   Input Is A Bst](https://leetcode.com/problems/two-sum-iv---input-is-a-bst/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0653-two-sum-iv---input-is-a-bst/solution.java) |
+| 0695 | [0695. Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0695-max-area-of-island/solution.java) |
+| 0724 | [0724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0724-find-pivot-index/solution.java) |
+| 0739 | [0739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0739-daily-temperatures/solution.java) |
+| 0747 | [0747. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0747-min-cost-climbing-stairs/solution.java) |
+| 0789 | [0789. Kth Largest Element In A Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0789-kth-largest-element-in-a-stream/solution.java) |
+| 0800 | [0800. Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0800-letter-case-permutation/solution.java) |
+| 0953 | [0953. Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0953-reverse-only-letters/solution.java) |
+| 0965 | [0965. Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0965-unique-email-addresses/solution.java) |
+| 1014 | [1014. K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1014-k-closest-points-to-origin/solution.java) |
+| 1036 | [1036. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1036-rotting-oranges/solution.java) |
+| 1046 | [1046. Max Consecutive Ones Iii](https://leetcode.com/problems/max-consecutive-ones-iii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1046-max-consecutive-ones-iii/solution.java) |
+| 1069 | [1069. Confusing Number](https://leetcode.com/problems/confusing-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1069-confusing-number/solution.java) |
+| 1127 | [1127. Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1127-last-stone-weight/solution.java) |
+| 1138 | [1138. Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1138-grumpy-bookstore-owner/solution.java) |
+| 1236 | [1236. N Th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1236-n-th-tribonacci-number/solution.java) |
+| 1280 | [1280. Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1280-diet-plan-performance/solution.java) |
+| 1371 | [1371. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1371-minimum-remove-to-make-valid-parentheses/solution.java) |
+| 1421 | [1421. Find Numbers With Even Number Of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1421-find-numbers-with-even-number-of-digits/solution.java) |
+| 1528 | [1528. Kids With The Greatest Number Of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1528-kids-with-the-greatest-number-of-candies/solution.java) |
+| 2161 | [2161. Stock Price Fluctuation ](https://leetcode.com/problems/stock-price-fluctuation-/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2161-stock-price-fluctuation-/solution.java) |
+| 2350 | [2350. Find Closest Number To Zero](https://leetcode.com/problems/find-closest-number-to-zero/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2350-find-closest-number-to-zero/solution.java) |
+| 2524 | [2524. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2524-largest-positive-integer-that-exists-with-its-negative/solution.java) |
+| 3974 | [3974. Xor After Range Multiplication Queries I](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/3974-xor-after-range-multiplication-queries-i/solution.java) |
+
+### Trees
+
+| # | Problem | Solutions |
+|---|---------|-----------|
+| 0094 | [0094. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0094-binary-tree-inorder-traversal/solution.java) |
+| 0098 | [0098. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0098-validate-binary-search-tree/solution.java) |
+| 0100 | [0100. Same Tree](https://leetcode.com/problems/same-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0100-same-tree/solution.java) |
+| 0101 | [0101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0101-symmetric-tree/solution.java) |
+| 0102 | [0102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0102-binary-tree-level-order-traversal/solution.java) |
+| 0103 | [0103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0103-binary-tree-zigzag-level-order-traversal/solution.java) |
+| 0104 | [0104. Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0104-maximum-depth-of-binary-tree/solution.java) |
+| 0106 | [0106. Construct Binary Tree From Inorder And Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/solution.java) |
+| 0107 | [0107. Binary Tree Level Order Traversal Ii](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0107-binary-tree-level-order-traversal-ii/solution.java) |
+| 0111 | [0111. Minimum Depth Of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0111-minimum-depth-of-binary-tree/solution.java) |
+| 0124 | [0124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0124-binary-tree-maximum-path-sum/solution.java) |
+| 0144 | [0144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0144-binary-tree-preorder-traversal/solution.java) |
+| 0173 | [0173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0173-binary-search-tree-iterator/solution.java) |
+| 0199 | [0199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0199-binary-tree-right-side-view/solution.java) |
+| 0226 | [0226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0226-invert-binary-tree/solution.java) • [Python](https://github.com/vikky49/leetcode-solutions/blob/main/0226-invert-binary-tree/solution.py) |
+| 0235 | [0235. Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0235-lowest-common-ancestor-of-a-binary-search-tree/solution.java) • [Python](https://github.com/vikky49/leetcode-solutions/blob/main/0235-lowest-common-ancestor-of-a-binary-search-tree/solution.py) |
+| 0236 | [0236. Lowest Common Ancestor Of A Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0236-lowest-common-ancestor-of-a-binary-tree/solution.java) |
+| 0250 | [0250. Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0250-count-univalue-subtrees/solution.java) |
+| 0257 | [0257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0257-binary-tree-paths/solution.java) |
+| 0261 | [0261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0261-graph-valid-tree/solution.java) |
+| 0298 | [0298. Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0298-binary-tree-longest-consecutive-sequence/solution.java) • [Python](https://github.com/vikky49/leetcode-solutions/blob/main/0298-binary-tree-longest-consecutive-sequence/solution.py) |
+| 0314 | [0314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0314-binary-tree-vertical-order-traversal/solution.java) |
 | 0515 | [0515. Find Largest Value In Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0515-find-largest-value-in-each-tree-row/solution.java) |
 | 0543 | [0543. Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0543-diameter-of-binary-tree/solution.java) |
 | 0545 | [0545. Boundary Of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0545-boundary-of-binary-tree/solution.java) |
 | 0563 | [0563. Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0563-binary-tree-tilt/solution.java) |
-| 0565 | [0565. Array Nesting](https://leetcode.com/problems/array-nesting/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0565-array-nesting/solution.java) |
-| 0567 | [0567. Permutation In String](https://leetcode.com/problems/permutation-in-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0567-permutation-in-string/solution.java) |
 | 0572 | [0572. Subtree Of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0572-subtree-of-another-tree/solution.java) |
-| 0605 | [0605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0605-can-place-flowers/solution.java) |
-| 0611 | [0611. Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0611-valid-triangle-number/solution.java) |
 | 0623 | [0623. Add One Row To Tree](https://leetcode.com/problems/add-one-row-to-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0623-add-one-row-to-tree/solution.java) |
-| 0624 | [0624. Maximum Distance In Arrays](https://leetcode.com/problems/maximum-distance-in-arrays/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0624-maximum-distance-in-arrays/solution.java) |
-| 0633 | [0633. Sum Of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0633-sum-of-square-numbers/solution.java) |
 | 0637 | [0637. Average Of Levels In Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0637-average-of-levels-in-binary-tree/solution.java) |
-| 0643 | [0643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0643-maximum-average-subarray-i/solution.java) |
-| 0653 | [0653. Two Sum Iv   Input Is A Bst](https://leetcode.com/problems/two-sum-iv---input-is-a-bst/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0653-two-sum-iv---input-is-a-bst/solution.java) |
 | 0662 | [0662. Maximum Width Of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0662-maximum-width-of-binary-tree/solution.java) |
-| 0678 | [0678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0678-valid-parenthesis-string/solution.java) |
-| 0695 | [0695. Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0695-max-area-of-island/solution.java) |
-| 0713 | [0713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0713-subarray-product-less-than-k/solution.java) |
-| 0724 | [0724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0724-find-pivot-index/solution.java) |
-| 0739 | [0739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0739-daily-temperatures/solution.java) |
-| 0747 | [0747. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0747-min-cost-climbing-stairs/solution.java) |
-| 0758 | [0758. Convert Binary Search Tree To Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0758-convert-binary-search-tree-to-sorted-doubly-linked-list/solution.java) |
 | 0764 | [0764. N Ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0764-n-ary-tree-level-order-traversal/solution.java) |
-| 0766 | [0766. Flatten A Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0766-flatten-a-multilevel-doubly-linked-list/solution.java) |
 | 0774 | [0774. Maximum Depth Of N Ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0774-maximum-depth-of-n-ary-tree/solution.java) |
-| 0789 | [0789. Kth Largest Element In A Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0789-kth-largest-element-in-a-stream/solution.java) |
-| 0800 | [0800. Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0800-letter-case-permutation/solution.java) |
 | 0893 | [0893. All Nodes Distance K In Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0893-all-nodes-distance-k-in-binary-tree/solution.java) |
 | 0904 | [0904. Leaf Similar Trees](https://leetcode.com/problems/leaf-similar-trees/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0904-leaf-similar-trees/solution.java) |
-| 0953 | [0953. Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0953-reverse-only-letters/solution.java) |
-| 0965 | [0965. Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0965-unique-email-addresses/solution.java) |
 | 0998 | [0998. Check Completeness Of A Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0998-check-completeness-of-a-binary-tree/solution.java) |
 | 1005 | [1005. Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1005-univalued-binary-tree/solution.java) |
-| 1014 | [1014. K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1014-k-closest-points-to-origin/solution.java) |
-| 1019 | [1019. Squares Of A Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1019-squares-of-a-sorted-array/solution.java) |
 | 1029 | [1029. Vertical Order Traversal Of A Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1029-vertical-order-traversal-of-a-binary-tree/solution.java) |
 | 1035 | [1035. Cousins In Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1035-cousins-in-binary-tree/solution.java) |
-| 1036 | [1036. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1036-rotting-oranges/solution.java) |
-| 1046 | [1046. Max Consecutive Ones Iii](https://leetcode.com/problems/max-consecutive-ones-iii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1046-max-consecutive-ones-iii/solution.java) |
-| 1069 | [1069. Confusing Number](https://leetcode.com/problems/confusing-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1069-confusing-number/solution.java) |
 | 1116 | [1116. Maximum Level Sum Of A Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1116-maximum-level-sum-of-a-binary-tree/solution.java) |
-| 1127 | [1127. Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1127-last-stone-weight/solution.java) |
-| 1128 | [1128. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1128-remove-all-adjacent-duplicates-in-string/remove-all-adjacent-duplicates-in-string.java) |
-| 1138 | [1138. Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1138-grumpy-bookstore-owner/solution.java) |
-| 1146 | [1146. Greatest Common Divisor Of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1146-greatest-common-divisor-of-strings/solution.java) |
-| 1236 | [1236. N Th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1236-n-th-tribonacci-number/solution.java) |
 | 1275 | [1275. Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1275-validate-binary-tree-nodes/solution.java) |
-| 1280 | [1280. Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1280-diet-plan-performance/solution.java) |
-| 1320 | [1320. Remove All Adjacent Duplicates In String Ii](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1320-remove-all-adjacent-duplicates-in-string-ii/remove-all-adjacent-duplicates-in-string-ii.java) |
-| 1371 | [1371. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1371-minimum-remove-to-make-valid-parentheses/solution.java) |
-| 1421 | [1421. Find Numbers With Even Number Of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1421-find-numbers-with-even-number-of-digits/solution.java) |
-| 1445 | [1445. Number Of Sub Arrays Of Size K And Average Greater Than Or Equal To Threshold](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/solution.java) |
 | 1474 | [1474. Longest Zigzag Path In A Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1474-longest-zigzag-path-in-a-binary-tree/longest-zigzag-path-in-a-binary-tree.java) |
-| 1528 | [1528. Kids With The Greatest Number Of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1528-kids-with-the-greatest-number-of-candies/solution.java) |
 | 1544 | [1544. Count Good Nodes In Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1544-count-good-nodes-in-binary-tree/solution.java) |
-| 1567 | [1567. Maximum Number Of Vowels In A Substring Of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1567-maximum-number-of-vowels-in-a-substring-of-given-length/solution.java) |
-| 1582 | [1582. Design Browser History](https://leetcode.com/problems/design-browser-history/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1582-design-browser-history/design-browser-history.java) |
-| 1603 | [1603. Running Sum Of 1D Array](https://leetcode.com/problems/running-sum-of-1d-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1603-running-sum-of-1d-array/solution.java) |
-| 1666 | [1666. Make The String Great](https://leetcode.com/problems/make-the-string-great/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1666-make-the-string-great/solution.java) |
 | 1731 | [1731. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1731-even-odd-tree/solution.java) • [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1731-even-odd-tree/even-odd-tree.java) |
 | 1790 | [1790. Lowest Common Ancestor Of A Binary Tree Iii](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1790-lowest-common-ancestor-of-a-binary-tree-iii/solution.java) |
-| 1894 | [1894. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1894-merge-strings-alternately/solution.java) |
-| 2161 | [2161. Stock Price Fluctuation ](https://leetcode.com/problems/stock-price-fluctuation-/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2161-stock-price-fluctuation-/solution.java) |
-| 2331 | [2331. Intersection Of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2331-intersection-of-multiple-arrays/solution.java) |
 | 2347 | [2347. Count Nodes Equal To Average Of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2347-count-nodes-equal-to-average-of-subtree/solution.java) |
-| 2350 | [2350. Find Closest Number To Zero](https://leetcode.com/problems/find-closest-number-to-zero/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2350-find-closest-number-to-zero/solution.java) |
 | 2461 | [2461. Amount Of Time For Binary Tree To Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2461-amount-of-time-for-binary-tree-to-be-infected/amount-of-time-for-binary-tree-to-be-infected.java) • [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2461-amount-of-time-for-binary-tree-to-be-infected/solution.java) |
-| 2524 | [2524. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2524-largest-positive-integer-that-exists-with-its-negative/solution.java) |
-| 2573 | [2573. Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2573-remove-nodes-from-linked-list/solution.java) |
+
+### Strings
+
+| # | Problem | Solutions |
+|---|---------|-----------|
+| 0003 | [0003. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0003-longest-substring-without-repeating-characters/solution.java) |
+| 0151 | [0151. Reverse Words In A String](https://leetcode.com/problems/reverse-words-in-a-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0151-reverse-words-in-a-string/solution.java) |
+| 0159 | [0159. Longest Substring With At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0159-longest-substring-with-at-most-two-distinct-characters/solution.java) |
+| 0186 | [0186. Reverse Words In A String Ii](https://leetcode.com/problems/reverse-words-in-a-string-ii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0186-reverse-words-in-a-string-ii/solution.java) |
+| 0271 | [0271. Encode And Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0271-encode-and-decode-strings/solution.java) |
+| 0340 | [0340. Longest Substring With At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0340-longest-substring-with-at-most-k-distinct-characters/solution.java) |
+| 0344 | [0344. Reverse String](https://leetcode.com/problems/reverse-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0344-reverse-string/solution.java) |
+| 0345 | [0345. Reverse Vowels Of A String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0345-reverse-vowels-of-a-string/solution.java) |
+| 0438 | [0438. Find All Anagrams In A String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0438-find-all-anagrams-in-a-string/solution.java) |
+| 0567 | [0567. Permutation In String](https://leetcode.com/problems/permutation-in-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0567-permutation-in-string/solution.java) |
+| 0678 | [0678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0678-valid-parenthesis-string/solution.java) |
+| 1128 | [1128. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1128-remove-all-adjacent-duplicates-in-string/remove-all-adjacent-duplicates-in-string.java) |
+| 1146 | [1146. Greatest Common Divisor Of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1146-greatest-common-divisor-of-strings/solution.java) |
+| 1320 | [1320. Remove All Adjacent Duplicates In String Ii](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1320-remove-all-adjacent-duplicates-in-string-ii/remove-all-adjacent-duplicates-in-string-ii.java) |
+| 1567 | [1567. Maximum Number Of Vowels In A Substring Of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1567-maximum-number-of-vowels-in-a-substring-of-given-length/solution.java) |
+| 1666 | [1666. Make The String Great](https://leetcode.com/problems/make-the-string-great/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1666-make-the-string-great/solution.java) |
+| 1894 | [1894. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1894-merge-strings-alternately/solution.java) |
+
+### Arrays
+
+| # | Problem | Solutions |
+|---|---------|-----------|
+| 0026 | [0026. Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0026-remove-duplicates-from-sorted-array/solution.java) |
+| 0088 | [0088. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0088-merge-sorted-array/solution.java) |
+| 0108 | [0108. Convert Sorted Array To Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0108-convert-sorted-array-to-binary-search-tree/solution.java) |
+| 0167 | [0167. Two Sum Ii   Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii---input-array-is-sorted/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0167-two-sum-ii---input-array-is-sorted/solution.java) |
+| 0209 | [0209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0209-minimum-size-subarray-sum/solution.java) |
+| 0215 | [0215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0215-kth-largest-element-in-an-array/solution.java) |
+| 0238 | [0238. Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0238-product-of-array-except-self/solution.java) |
+| 0565 | [0565. Array Nesting](https://leetcode.com/problems/array-nesting/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0565-array-nesting/solution.java) |
+| 0624 | [0624. Maximum Distance In Arrays](https://leetcode.com/problems/maximum-distance-in-arrays/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0624-maximum-distance-in-arrays/solution.java) |
+| 0643 | [0643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0643-maximum-average-subarray-i/solution.java) |
+| 0713 | [0713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0713-subarray-product-less-than-k/solution.java) |
+| 1019 | [1019. Squares Of A Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1019-squares-of-a-sorted-array/solution.java) |
+| 1445 | [1445. Number Of Sub Arrays Of Size K And Average Greater Than Or Equal To Threshold](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/solution.java) |
+| 1603 | [1603. Running Sum Of 1D Array](https://leetcode.com/problems/running-sum-of-1d-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1603-running-sum-of-1d-array/solution.java) |
+| 2331 | [2331. Intersection Of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2331-intersection-of-multiple-arrays/solution.java) |
 | 2664 | [2664. Maximize Greatness Of An Array](https://leetcode.com/problems/maximize-greatness-of-an-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2664-maximize-greatness-of-an-array/solution.java) |
 | 3843 | [3843. Partition Array Into Two Equal Product Subsets](https://leetcode.com/problems/partition-array-into-two-equal-product-subsets/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/3843-partition-array-into-two-equal-product-subsets/solution.java) |
-| 3974 | [3974. Xor After Range Multiplication Queries I](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/3974-xor-after-range-multiplication-queries-i/solution.java) |
+
+### Linked Lists
+
+| # | Problem | Solutions |
+|---|---------|-----------|
+| 0114 | [0114. Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0114-flatten-binary-tree-to-linked-list/solution.java) |
+| 0141 | [0141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0141-linked-list-cycle/solution.java) |
+| 0160 | [0160. Intersection Of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0160-intersection-of-two-linked-lists/solution.java) |
+| 0206 | [0206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0206-reverse-linked-list/solution.java) |
+| 0234 | [0234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0234-palindrome-linked-list/solution.java) |
+| 0237 | [0237. Delete Node In A Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0237-delete-node-in-a-linked-list/solution.java) |
+| 0328 | [0328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0328-odd-even-linked-list/solution.java) |
+| 0758 | [0758. Convert Binary Search Tree To Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0758-convert-binary-search-tree-to-sorted-doubly-linked-list/solution.java) |
+| 0766 | [0766. Flatten A Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0766-flatten-a-multilevel-doubly-linked-list/solution.java) |
+| 2573 | [2573. Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2573-remove-nodes-from-linked-list/solution.java) |
+
+### Graphs
+
+| # | Problem | Solutions |
+|---|---------|-----------|
+| 0323 | [0323. Number Of Connected Components In An Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0323-number-of-connected-components-in-an-undirected-graph/solution.java) |
+
+### Design
+
+| # | Problem | Solutions |
+|---|---------|-----------|
+| 1582 | [1582. Design Browser History](https://leetcode.com/problems/design-browser-history/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1582-design-browser-history/design-browser-history.java) |
 
 ## 🛠️ Usage
 
@@ -203,4 +235,4 @@ My solutions to LeetCode problems in multiple programming languages.
 2. Click on language to view solution code
 3. Clone repo to run solutions locally
 
-*Last updated: 2025-09-23 18:36:55*
+*Last updated: 2025-09-23 18:44:42*
