@@ -153,10 +153,10 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 1275 | [1275. Validate Binary Tree Nodes](https://leetcode.com/problems/validate-binary-tree-nodes/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1275-validate-binary-tree-nodes/solution.java) |
 | 1474 | [1474. Longest Zigzag Path In A Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1474-longest-zigzag-path-in-a-binary-tree/longest-zigzag-path-in-a-binary-tree.java) |
 | 1544 | [1544. Count Good Nodes In Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1544-count-good-nodes-in-binary-tree/solution.java) |
-| 1731 | [1731. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1731-even-odd-tree/solution.java) • [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1731-even-odd-tree/even-odd-tree.java) |
+| 1731 | [1731. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1731-even-odd-tree/even-odd-tree.java) • [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1731-even-odd-tree/solution.java) |
 | 1790 | [1790. Lowest Common Ancestor Of A Binary Tree Iii](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1790-lowest-common-ancestor-of-a-binary-tree-iii/solution.java) |
 | 2347 | [2347. Count Nodes Equal To Average Of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2347-count-nodes-equal-to-average-of-subtree/solution.java) |
-| 2461 | [2461. Amount Of Time For Binary Tree To Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2461-amount-of-time-for-binary-tree-to-be-infected/amount-of-time-for-binary-tree-to-be-infected.java) • [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2461-amount-of-time-for-binary-tree-to-be-infected/solution.java) |
+| 2461 | [2461. Amount Of Time For Binary Tree To Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2461-amount-of-time-for-binary-tree-to-be-infected/solution.java) • [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2461-amount-of-time-for-binary-tree-to-be-infected/amount-of-time-for-binary-tree-to-be-infected.java) |
 
 ### Strings
 
@@ -235,4 +235,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code
 3. Clone repo to run solutions locally
 
-*Last updated: 2025-09-24 18:33:45*
+*Last updated: 2025-09-24 19:01:13*
