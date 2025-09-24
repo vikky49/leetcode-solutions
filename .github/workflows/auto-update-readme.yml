@@ -13,27 +13,27 @@ on:
       - '**/*.go'
   pull_request:
     branches: [ main ]
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0
-    
+
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-    
+
     - name: Create scripts directory
       run: mkdir -p scripts
-    
+
     - name: Add README generator script
       run: |
         cat > scripts/generate_readme.py << 'EOF'
@@ -60,23 +60,18 @@ jobs:
                     'design': 'Design',
                     'bit': 'Bit Manipulation'
                 }
-            
+
             def scan_solutions(self):
                 pattern = re.compile(r'^(\d{4})-(.+)$')
-                
                 for item in self.repo_root.iterdir():
                     if item.is_dir() and pattern.match(item.name):
                         match = pattern.match(item.name)
                         problem_number = match.group(1)
                         problem_name = match.group(2)
-                        
-                        # Determine problem type from directory name
                         problem_type = self.determine_problem_type(problem_name)
-                        
                         solution_files = []
                         for ext in ['*.java', '*.py', '*.cpp', '*.js', '*.ts', '*.c', '*.go']:
                             solution_files.extend(item.glob(ext))
-                        
                         if solution_files:
                             solution_data = {
                                 'number': problem_number,
@@ -86,26 +81,23 @@ jobs:
                                 'type': problem_type,
                                 'solutions': []
                             }
-                            
                             for solution_file in solution_files:
                                 solution_data['solutions'].append({
                                     'file': solution_file.name,
                                     'language': self.get_language_from_extension(solution_file.suffix),
-                                    'github_url': f"https://github.com/{self.github_repo}/blob/main/{item.name}/{solution_file.name}"
+                                    'github_url': f"https://github.com/{self.github_repo}/blob/main/{item.name}/{solution_file.name}",
+                                    'local_path': f"{item.name}/{solution_file.name}"
                                 })
-                            
                             self.solutions.append(solution_data)
-                
                 self.solutions.sort(key=lambda x: int(x['number']))
-            
+
             def determine_problem_type(self, problem_name):
-                # Map problem name to type based on keywords
                 problem_name_lower = problem_name.lower()
                 for key, value in self.problem_types.items():
                     if key in problem_name_lower:
                         return value
                 return 'Other'
-            
+
             def get_language_from_extension(self, ext):
                 language_map = {
                     '.java': 'Java',
@@ -117,16 +109,14 @@ jobs:
                     '.go': 'Go'
                 }
                 return language_map.get(ext, ext[1:].upper())
-            
+
             def generate_readme_content(self):
                 content = []
-                
                 # Header
                 content.append("# LeetCode Solutions")
                 content.append("")
                 content.append("My solutions to LeetCode problems in multiple programming languages, organized by problem type.")
                 content.append("")
-                
                 # Statistics
                 total_problems = len(self.solutions)
                 language_count = {}
@@ -137,60 +127,50 @@ jobs:
                         language_count[lang] = language_count.get(lang, 0) + 1
                     problem_type = solution['type']
                     type_count[problem_type] = type_count.get(problem_type, 0) + 1
-                
                 content.append("## 📊 Statistics")
                 content.append("")
                 content.append(f"- **Total Problems**: {total_problems}")
                 for lang, count in sorted(language_count.items(), key=lambda x: x[1], reverse=True):
                     content.append(f"- **{lang}**: {count} solutions")
                 content.append("")
-                
                 # Solutions by type
                 content.append("## 🗂️ Solutions by Problem Type")
                 content.append("")
-                
                 # Group solutions by type
                 solutions_by_type = {}
                 for solution in self.solutions:
                     if solution['type'] not in solutions_by_type:
                         solutions_by_type[solution['type']] = []
                     solutions_by_type[solution['type']].append(solution)
-                
                 # Sort types by count
                 sorted_types = sorted(solutions_by_type.keys(), key=lambda x: type_count.get(x, 0), reverse=True)
-                
                 for problem_type in sorted_types:
                     content.append(f"### {problem_type}")
                     content.append("")
-                    content.append("| # | Problem | Solutions |")
-                    content.append("|---|---------|-----------|")
-                    
+                    content.append("| # | Problem | LeetCode | Solutions |")
+                    content.append("|---|---------|----------|-----------|")
                     for solution in solutions_by_type[problem_type]:
                         problem_link = f"[{solution['number']}. {solution['title']}]({solution['leetcode_url']})"
-                        
+                        leetcode_link = f"[LeetCode]({solution['leetcode_url']})"
                         solution_links = []
                         for sol in solution['solutions']:
                             solution_links.append(f"[{sol['language']}]({sol['github_url']})")
-                        
                         solutions_cell = " • ".join(solution_links)
-                        content.append(f"| {solution['number']} | {problem_link} | {solutions_cell} |")
+                        content.append(f"| {solution['number']} | {problem_link} | {leetcode_link} | {solutions_cell} |")
                     content.append("")
-                
                 # Footer
                 content.append("## 🛠️ Usage")
                 content.append("")
-                content.append("1. Click on problem name to view on LeetCode")
-                content.append("2. Click on language to view solution code")
-                content.append("3. Clone repo to run solutions locally")
+                content.append("1. Click on problem name or LeetCode to view the problem description on LeetCode.")
+                content.append("2. Click on language to view solution code in this repo.")
+                content.append("3. Clone repo to run solutions locally.")
                 content.append("")
                 content.append(f"*Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*")
-                
                 return "\n".join(content)
-            
+
             def update_readme(self):
                 content = self.generate_readme_content()
                 readme_path = self.repo_root / "README.md"
-                
                 with open(readme_path, 'w', encoding='utf-8') as f:
                     f.write(content)
 
@@ -200,10 +180,10 @@ jobs:
             generator.update_readme()
             print("README updated successfully!")
         EOF
-    
+
     - name: Generate README
       run: python scripts/generate_readme.py
-    
+
     - name: Check for changes
       id: verify-changed-files
       run: |
@@ -212,12 +192,12 @@ jobs:
         else
           echo "changed=false" >> $GITHUB_OUTPUT
         fi
-    
+
     - name: Commit and push changes
       if: steps.verify-changed-files.outputs.changed == 'true'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add README.md
-        git commit -m "🤖 Auto-update README with latest solutions organized by problem type"
+        git commit -m "🤖 Auto-update README with latest solutions organized by problem type and links"
         git push
