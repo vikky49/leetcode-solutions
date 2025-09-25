@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 202
-- **Java**: 207 solutions
+- **Total Problems**: 203
+- **Java**: 208 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -208,6 +208,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 0215 | [0215. Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0215-kth-largest-element-in-an-array/solution.java) |
 | 0238 | [0238. Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [LeetCode](https://leetcode.com/problems/product-of-array-except-self/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0238-product-of-array-except-self/solution.java) |
 | 0350 | [0350. Intersection Of Two Arrays Ii](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [LeetCode](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0350-intersection-of-two-arrays-ii/solution.java) |
+| 0560 | [0560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | [LeetCode](https://leetcode.com/problems/subarray-sum-equals-k/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0560-subarray-sum-equals-k/solution.java) |
 | 0565 | [0565. Array Nesting](https://leetcode.com/problems/array-nesting/) | [LeetCode](https://leetcode.com/problems/array-nesting/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0565-array-nesting/solution.java) |
 | 0624 | [0624. Maximum Distance In Arrays](https://leetcode.com/problems/maximum-distance-in-arrays/) | [LeetCode](https://leetcode.com/problems/maximum-distance-in-arrays/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0624-maximum-distance-in-arrays/solution.java) |
 | 0643 | [0643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | [LeetCode](https://leetcode.com/problems/maximum-average-subarray-i/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0643-maximum-average-subarray-i/solution.java) |
@@ -253,4 +254,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-09-25 06:02:22*
+*Last updated: 2025-09-25 18:01:50*
