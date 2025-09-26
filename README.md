@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 203
-- **Java**: 208 solutions
+- **Total Problems**: 204
+- **Java**: 209 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -69,6 +69,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 0230 | [0230. Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0230-kth-smallest-element-in-a-bst/solution.java) |
 | 0242 | [0242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [LeetCode](https://leetcode.com/problems/valid-anagram/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0242-valid-anagram/solution.java) |
 | 0252 | [0252. Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [LeetCode](https://leetcode.com/problems/meeting-rooms/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0252-meeting-rooms/solution.java) |
+| 0253 | [0253. Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii/) | [LeetCode](https://leetcode.com/problems/meeting-rooms-ii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0253-meeting-rooms-ii/solution.java) |
 | 0259 | [0259. 3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) | [LeetCode](https://leetcode.com/problems/3sum-smaller/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0259-3sum-smaller/solution.java) |
 | 0266 | [0266. Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/) | [LeetCode](https://leetcode.com/problems/palindrome-permutation/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0266-palindrome-permutation/solution.java) |
 | 0278 | [0278. First Bad Version](https://leetcode.com/problems/first-bad-version/) | [LeetCode](https://leetcode.com/problems/first-bad-version/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0278-first-bad-version/solution.java) |
@@ -254,4 +255,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-09-26 00:42:38*
+*Last updated: 2025-09-26 06:01:41*
