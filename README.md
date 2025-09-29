@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 204
-- **Java**: 209 solutions
+- **Total Problems**: 205
+- **Java**: 210 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -110,6 +110,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 1069 | [1069. Confusing Number](https://leetcode.com/problems/confusing-number/) | [LeetCode](https://leetcode.com/problems/confusing-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1069-confusing-number/solution.java) |
 | 1127 | [1127. Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [LeetCode](https://leetcode.com/problems/last-stone-weight/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1127-last-stone-weight/solution.java) |
 | 1138 | [1138. Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/) | [LeetCode](https://leetcode.com/problems/grumpy-bookstore-owner/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1138-grumpy-bookstore-owner/solution.java) |
+| 1171 | [1171. Shortest Path In Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [LeetCode](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1171-shortest-path-in-binary-matrix/shortest-path-in-binary-matrix.java) |
 | 1236 | [1236. N Th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) | [LeetCode](https://leetcode.com/problems/n-th-tribonacci-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1236-n-th-tribonacci-number/solution.java) |
 | 1280 | [1280. Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/) | [LeetCode](https://leetcode.com/problems/diet-plan-performance/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1280-diet-plan-performance/solution.java) |
 | 1371 | [1371. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [LeetCode](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1371-minimum-remove-to-make-valid-parentheses/solution.java) |
@@ -255,4 +256,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-09-29 18:26:00*
+*Last updated: 2025-09-29 19:06:10*
