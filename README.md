@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 205
-- **Java**: 210 solutions
+- **Total Problems**: 207
+- **Java**: 213 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -18,6 +18,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 0002 | [0002. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [LeetCode](https://leetcode.com/problems/add-two-numbers/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0002-add-two-numbers/solution.java) |
 | 0006 | [0006. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [LeetCode](https://leetcode.com/problems/zigzag-conversion/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0006-zigzag-conversion/solution.java) |
 | 0007 | [0007. Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [LeetCode](https://leetcode.com/problems/reverse-integer/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0007-reverse-integer/solution.java) |
+| 0009 | [0009. Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [LeetCode](https://leetcode.com/problems/palindrome-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0009-palindrome-number/solution.java) |
 | 0011 | [0011. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [LeetCode](https://leetcode.com/problems/container-with-most-water/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0011-container-with-most-water/solution.java) |
 | 0012 | [0012. Integer To Roman](https://leetcode.com/problems/integer-to-roman/) | [LeetCode](https://leetcode.com/problems/integer-to-roman/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0012-integer-to-roman/solution.java) |
 | 0013 | [0013. Roman To Integer](https://leetcode.com/problems/roman-to-integer/) | [LeetCode](https://leetcode.com/problems/roman-to-integer/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0013-roman-to-integer/solution.java) |
@@ -55,6 +56,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 0129 | [0129. Sum Root To Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [LeetCode](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0129-sum-root-to-leaf-numbers/solution.java) |
 | 0130 | [0130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | [LeetCode](https://leetcode.com/problems/surrounded-regions/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0130-surrounded-regions/solution.java) |
 | 0138 | [0138. Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | [LeetCode](https://leetcode.com/problems/copy-list-with-random-pointer/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0138-copy-list-with-random-pointer/solution.java) |
+| 0139 | [0139. Word Break](https://leetcode.com/problems/word-break/) | [LeetCode](https://leetcode.com/problems/word-break/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0139-word-break/solution.java) |
 | 0143 | [0143. Reorder List](https://leetcode.com/problems/reorder-list/) | [LeetCode](https://leetcode.com/problems/reorder-list/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0143-reorder-list/solution.java) |
 | 0146 | [0146. Lru Cache](https://leetcode.com/problems/lru-cache/) | [LeetCode](https://leetcode.com/problems/lru-cache/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0146-lru-cache/solution.java) |
 | 0150 | [0150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [LeetCode](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0150-evaluate-reverse-polish-notation/solution.java) |
@@ -110,7 +112,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 1069 | [1069. Confusing Number](https://leetcode.com/problems/confusing-number/) | [LeetCode](https://leetcode.com/problems/confusing-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1069-confusing-number/solution.java) |
 | 1127 | [1127. Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [LeetCode](https://leetcode.com/problems/last-stone-weight/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1127-last-stone-weight/solution.java) |
 | 1138 | [1138. Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/) | [LeetCode](https://leetcode.com/problems/grumpy-bookstore-owner/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1138-grumpy-bookstore-owner/solution.java) |
-| 1171 | [1171. Shortest Path In Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [LeetCode](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1171-shortest-path-in-binary-matrix/shortest-path-in-binary-matrix.java) |
+| 1171 | [1171. Shortest Path In Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [LeetCode](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1171-shortest-path-in-binary-matrix/solution.java) • [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1171-shortest-path-in-binary-matrix/shortest-path-in-binary-matrix.java) |
 | 1236 | [1236. N Th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) | [LeetCode](https://leetcode.com/problems/n-th-tribonacci-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1236-n-th-tribonacci-number/solution.java) |
 | 1280 | [1280. Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/) | [LeetCode](https://leetcode.com/problems/diet-plan-performance/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1280-diet-plan-performance/solution.java) |
 | 1371 | [1371. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [LeetCode](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1371-minimum-remove-to-make-valid-parentheses/solution.java) |
@@ -256,4 +258,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-09-29 19:48:17*
+*Last updated: 2025-09-30 00:03:35*
