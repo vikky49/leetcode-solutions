@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 207
-- **Java**: 213 solutions
+- **Total Problems**: 208
+- **Java**: 214 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -135,6 +135,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 0102 | [0102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0102-binary-tree-level-order-traversal/solution.java) |
 | 0103 | [0103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [LeetCode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0103-binary-tree-zigzag-level-order-traversal/solution.java) |
 | 0104 | [0104. Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0104-maximum-depth-of-binary-tree/solution.java) |
+| 0105 | [0105. Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/solution.java) |
 | 0106 | [0106. Construct Binary Tree From Inorder And Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [LeetCode](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/solution.java) |
 | 0107 | [0107. Binary Tree Level Order Traversal Ii](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0107-binary-tree-level-order-traversal-ii/solution.java) |
 | 0111 | [0111. Minimum Depth Of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [LeetCode](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0111-minimum-depth-of-binary-tree/solution.java) |
@@ -258,4 +259,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-09-30 16:33:37*
+*Last updated: 2025-09-30 18:01:44*
