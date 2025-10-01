@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 208
-- **Java**: 214 solutions
+- **Total Problems**: 209
+- **Java**: 215 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -206,6 +206,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | # | Problem | LeetCode | Solutions |
 |---|---------|----------|-----------|
 | 0026 | [0026. Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0026-remove-duplicates-from-sorted-array/solution.java) |
+| 0034 | [0034. Find First And Last Position Of Element In Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [LeetCode](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0034-find-first-and-last-position-of-element-in-sorted-array/solution.java) |
 | 0088 | [0088. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [LeetCode](https://leetcode.com/problems/merge-sorted-array/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0088-merge-sorted-array/solution.java) |
 | 0108 | [0108. Convert Sorted Array To Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [LeetCode](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0108-convert-sorted-array-to-binary-search-tree/solution.java) |
 | 0167 | [0167. Two Sum Ii   Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii---input-array-is-sorted/) | [LeetCode](https://leetcode.com/problems/two-sum-ii---input-array-is-sorted/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0167-two-sum-ii---input-array-is-sorted/solution.java) |
@@ -259,4 +260,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-09-30 21:15:34*
+*Last updated: 2025-10-01 00:04:40*
