@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 209
-- **Java**: 215 solutions
+- **Total Problems**: 210
+- **Java**: 216 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -78,6 +78,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 0279 | [0279. Perfect Squares](https://leetcode.com/problems/perfect-squares/) | [LeetCode](https://leetcode.com/problems/perfect-squares/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0279-perfect-squares/solution.java) |
 | 0280 | [0280. Wiggle Sort](https://leetcode.com/problems/wiggle-sort/) | [LeetCode](https://leetcode.com/problems/wiggle-sort/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0280-wiggle-sort/solution.java) |
 | 0283 | [0283. Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [LeetCode](https://leetcode.com/problems/move-zeroes/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0283-move-zeroes/solution.java) |
+| 0316 | [0316. Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) | [LeetCode](https://leetcode.com/problems/remove-duplicate-letters/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0316-remove-duplicate-letters/solution.java) |
 | 0329 | [0329. Longest Increasing Path In A Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [LeetCode](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0329-longest-increasing-path-in-a-matrix/solution.java) |
 | 0341 | [0341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [LeetCode](https://leetcode.com/problems/flatten-nested-list-iterator/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0341-flatten-nested-list-iterator/solution.java) |
 | 0346 | [0346. Moving Average From Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) | [LeetCode](https://leetcode.com/problems/moving-average-from-data-stream/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0346-moving-average-from-data-stream/solution.java) |
@@ -260,4 +261,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-10-01 00:04:40*
+*Last updated: 2025-10-01 18:01:41*
