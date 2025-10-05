@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 210
-- **Java**: 216 solutions
+- **Total Problems**: 211
+- **Java**: 217 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -119,6 +119,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 1371 | [1371. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [LeetCode](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1371-minimum-remove-to-make-valid-parentheses/solution.java) |
 | 1421 | [1421. Find Numbers With Even Number Of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | [LeetCode](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1421-find-numbers-with-even-number-of-digits/solution.java) |
 | 1528 | [1528. Kids With The Greatest Number Of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | [LeetCode](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1528-kids-with-the-greatest-number-of-candies/solution.java) |
+| 1713 | [1713. Dot Product Of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors/) | [LeetCode](https://leetcode.com/problems/dot-product-of-two-sparse-vectors/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1713-dot-product-of-two-sparse-vectors/dot-product-of-two-sparse-vectors.java) |
 | 2161 | [2161. Stock Price Fluctuation ](https://leetcode.com/problems/stock-price-fluctuation-/) | [LeetCode](https://leetcode.com/problems/stock-price-fluctuation-/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2161-stock-price-fluctuation-/solution.java) |
 | 2350 | [2350. Find Closest Number To Zero](https://leetcode.com/problems/find-closest-number-to-zero/) | [LeetCode](https://leetcode.com/problems/find-closest-number-to-zero/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2350-find-closest-number-to-zero/solution.java) |
 | 2524 | [2524. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) | [LeetCode](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2524-largest-positive-integer-that-exists-with-its-negative/solution.java) |
@@ -261,4 +262,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-10-05 15:54:40*
+*Last updated: 2025-10-05 16:28:10*
