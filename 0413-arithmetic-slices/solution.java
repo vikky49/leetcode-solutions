@@ -24,6 +24,8 @@ class Solution {
             int windowLength = right - left + 1;
 
             if(windowLength >=3) {
+                //This is hte formula for the math
+                // Summation = (n-2) * (n-1) / 2
                 int subarrays = (windowLength - 2) * (windowLength - 1) / 2;
                 totalCount += subarrays;
             }
