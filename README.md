@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 211
-- **Java**: 217 solutions
+- **Total Problems**: 212
+- **Java**: 218 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -111,6 +111,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 1036 | [1036. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1036-rotting-oranges/solution.java) |
 | 1046 | [1046. Max Consecutive Ones Iii](https://leetcode.com/problems/max-consecutive-ones-iii/) | [LeetCode](https://leetcode.com/problems/max-consecutive-ones-iii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1046-max-consecutive-ones-iii/solution.java) |
 | 1069 | [1069. Confusing Number](https://leetcode.com/problems/confusing-number/) | [LeetCode](https://leetcode.com/problems/confusing-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1069-confusing-number/solution.java) |
+| 1126 | [1126. Minimum Cost To Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) | [LeetCode](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1126-minimum-cost-to-connect-sticks/minimum-cost-to-connect-sticks.java) |
 | 1127 | [1127. Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | [LeetCode](https://leetcode.com/problems/last-stone-weight/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1127-last-stone-weight/solution.java) |
 | 1138 | [1138. Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/) | [LeetCode](https://leetcode.com/problems/grumpy-bookstore-owner/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1138-grumpy-bookstore-owner/solution.java) |
 | 1171 | [1171. Shortest Path In Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [LeetCode](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1171-shortest-path-in-binary-matrix/solution.java) • [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1171-shortest-path-in-binary-matrix/shortest-path-in-binary-matrix.java) |
@@ -262,4 +263,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-10-08 13:58:20*
+*Last updated: 2025-10-08 14:21:20*
