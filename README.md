@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 212
-- **Java**: 218 solutions
+- **Total Problems**: 213
+- **Java**: 219 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -108,6 +108,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 0953 | [0953. Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/) | [LeetCode](https://leetcode.com/problems/reverse-only-letters/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0953-reverse-only-letters/solution.java) |
 | 0965 | [0965. Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) | [LeetCode](https://leetcode.com/problems/unique-email-addresses/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/0965-unique-email-addresses/solution.java) |
 | 1014 | [1014. K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/) | [LeetCode](https://leetcode.com/problems/k-closest-points-to-origin/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1014-k-closest-points-to-origin/solution.java) |
+| 1028 | [1028. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [LeetCode](https://leetcode.com/problems/interval-list-intersections/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1028-interval-list-intersections/interval-list-intersections.java) |
 | 1036 | [1036. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [LeetCode](https://leetcode.com/problems/rotting-oranges/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1036-rotting-oranges/solution.java) |
 | 1046 | [1046. Max Consecutive Ones Iii](https://leetcode.com/problems/max-consecutive-ones-iii/) | [LeetCode](https://leetcode.com/problems/max-consecutive-ones-iii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1046-max-consecutive-ones-iii/solution.java) |
 | 1069 | [1069. Confusing Number](https://leetcode.com/problems/confusing-number/) | [LeetCode](https://leetcode.com/problems/confusing-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1069-confusing-number/solution.java) |
@@ -263,4 +264,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-10-09 19:36:05*
+*Last updated: 2025-10-10 19:17:45*
