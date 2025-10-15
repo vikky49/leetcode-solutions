@@ -15,99 +15,64 @@
  */
 class Solution {
     public String getDirections(TreeNode root, int startValue, int destValue) {
+        StringBuilder pathToStart = new StringBuilder();
+        StringBuilder pathToDest = new StringBuilder();
 
-        Map<Integer, TreeNode> byVal = new HashMap<>();
-        Map<TreeNode, TreeNode> parentMap = new HashMap<>();
+        findPath(root, startValue, pathToStart);
+        findPath(root, destValue, pathToDest);
 
-        buildValueParentMap(
-                root,
-                null,
-                byVal,
-                parentMap);
+        // Now the prefix for the path -- root - start value 
+        // also from root to dest value -- will be the same 
 
-        Queue<TreeNode> queue = new LinkedList<>();
-        Set<TreeNode> seen = new HashSet<>();
+        //Lets remove the path from root to LCA 
 
-        Map<TreeNode, Character> move = new HashMap<>();
-        Map<TreeNode, TreeNode> prev = new HashMap<>();
-
-        TreeNode src = byVal.get(startValue);
-        TreeNode dst = byVal.get(destValue);
-
-        if (src == null || dst == null) {
-            return "";
+        int i = 0;
+        while (i < pathToStart.length() && i < pathToDest.length() &&
+                pathToStart.charAt(i) == pathToDest.charAt(i)) {
+            i++;
         }
 
-        if (src == dst) {
-            return "";
+        StringBuilder result = new StringBuilder();
+
+        // Add 'U's for going up from start to LCA
+        for (int j = i; j < pathToStart.length(); j++) {
+            result.append('U');
         }
 
-        queue.offer(src);
-        seen.add(src);
+        // Add path from LCA to dest
+        result.append(pathToDest.substring(i));
 
-        while (!queue.isEmpty()) {
-
-            TreeNode curNode = queue.poll();
-
-            if (curNode == dst) {
-                //Lets build the path later here 
-                StringBuilder sb = new StringBuilder();
-                TreeNode node = dst;
-                while (node != src) {
-                    Character step = move.get(node);
-                    if (step == null) {
-                        break;
-                    }
-                    sb.append(step);
-                    node = prev.get(node);
-                }
-                return sb.reverse().toString();
-
-            }
-
-            if (curNode.left != null && !seen.contains(curNode.left)) {
-                queue.offer(curNode.left);
-                seen.add(curNode.left);
-                move.put(curNode.left, 'L');
-                prev.put(curNode.left, curNode);
-
-            }
-
-            if (curNode.right != null && !seen.contains(curNode.right)) {
-                queue.offer(curNode.right);
-                seen.add(curNode.right);
-                move.put(curNode.right, 'R');
-                prev.put(curNode.right, curNode);
-            }
-
-            TreeNode parent = parentMap.get(curNode);
-
-            if (parent != null && !seen.contains(parent)) {
-                queue.offer(parent);
-                seen.add(parent);
-                move.put(parent, 'U');
-                prev.put(parent, curNode);
-
-            }
-
-        }
-        return "";
+        return result.toString();
 
     }
 
-    private void buildValueParentMap(
+    private boolean findPath(
             TreeNode node,
-            TreeNode parent,
-            Map<Integer, TreeNode> byVal,
-            Map<TreeNode, TreeNode> parentMap) {
+            int target,
+            StringBuilder path) {
         if (node == null) {
-            return;
+            return false;
         }
 
-        byVal.put(node.val, node);
-        parentMap.put(node, parent);
+        if (node.val == target) {
+            return true;
+        }
 
-        buildValueParentMap(node.left, node, byVal, parentMap);
-        buildValueParentMap(node.right, node, byVal, parentMap);
+        path.append('L');
+        if (findPath(node.left, target, path)) {
+            return true;
+        }
+
+        path.deleteCharAt(path.length() - 1);
+
+        path.append('R');
+
+        if (findPath(node.right, target, path)) {
+            return true;
+        }
+
+        path.deleteCharAt(path.length() - 1);
+
+        return false;
     }
 }
