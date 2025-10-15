@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 213
-- **Java**: 219 solutions
+- **Total Problems**: 214
+- **Java**: 220 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -177,6 +177,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 1544 | [1544. Count Good Nodes In Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [LeetCode](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1544-count-good-nodes-in-binary-tree/solution.java) |
 | 1731 | [1731. Even Odd Tree](https://leetcode.com/problems/even-odd-tree/) | [LeetCode](https://leetcode.com/problems/even-odd-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1731-even-odd-tree/even-odd-tree.java) • [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1731-even-odd-tree/solution.java) |
 | 1790 | [1790. Lowest Common Ancestor Of A Binary Tree Iii](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/) | [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1790-lowest-common-ancestor-of-a-binary-tree-iii/solution.java) |
+| 1883 | [1883. Find Distance In A Binary Tree](https://leetcode.com/problems/find-distance-in-a-binary-tree/) | [LeetCode](https://leetcode.com/problems/find-distance-in-a-binary-tree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1883-find-distance-in-a-binary-tree/find-distance-in-a-binary-tree.java) |
 | 2347 | [2347. Count Nodes Equal To Average Of Subtree](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | [LeetCode](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2347-count-nodes-equal-to-average-of-subtree/solution.java) |
 | 2461 | [2461. Amount Of Time For Binary Tree To Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) | [LeetCode](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2461-amount-of-time-for-binary-tree-to-be-infected/solution.java) • [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2461-amount-of-time-for-binary-tree-to-be-infected/amount-of-time-for-binary-tree-to-be-infected.java) |
 
@@ -264,4 +265,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-10-15 15:50:20*
+*Last updated: 2025-10-15 16:09:11*
