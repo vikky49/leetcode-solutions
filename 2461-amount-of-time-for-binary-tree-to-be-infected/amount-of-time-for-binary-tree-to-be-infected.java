@@ -15,61 +15,70 @@
  */
 class Solution {
     public int amountOfTime(TreeNode root, int start) {
-        Map<Integer, List<Integer>> graph = new HashMap<>();
-        buildGraph(root, null, graph);
-        System.out.print(graph.toString());
+        Map<Integer, TreeNode> byVal = new HashMap<>();
+        Map<TreeNode, TreeNode> parentMap = new HashMap<>();
 
-        //Step2: BFS from start node to simulate infectious node 
-        Queue<Integer> queue = new LinkedList<>();
-        Set<Integer> visited = new HashSet<>();
+        buildValueParentMap(
+                root,
+                null,
+                byVal,
+                parentMap);
 
-        queue.offer(start);
-        visited.add(start);
+        Queue<TreeNode> queue = new LinkedList<>();
+        Set<TreeNode> seen = new HashSet<>();
 
-        int time = 0;
+        int minitues = -1;
+
+        TreeNode src = byVal.get(start);
+        if (src == null) {
+            return 0;
+        }
+
+        queue.offer(src);
+        seen.add(src);
 
         while (!queue.isEmpty()) {
             int size = queue.size();
-            boolean infected = false;
 
             for (int i = 0; i < size; i++) {
-                int current = queue.poll();
+                TreeNode curr = queue.poll();
 
-                for (int neighbour : graph.getOrDefault(current, new ArrayList<>())) {
-                    if (!visited.contains(neighbour)) {
-                        visited.add(neighbour);
-                        queue.offer(neighbour);
-                        infected = true;
-                    }
+                if(curr.left != null && !seen.contains(curr.left)) {
+                    seen.add(curr.left);
+                    queue.offer(curr.left);
+                }
+
+
+                if(curr.right != null && !seen.contains(curr.right)) {
+                    seen.add(curr.right);
+                    queue.offer(curr.right);
+                }
+
+                TreeNode parent = parentMap.get(curr);
+                if(parent != null && !seen.contains(parent)) {
+                    seen.add(parent);
+                    queue.offer(parent);
                 }
             }
+            minitues++;
 
-            if (infected) {
-                time++;
-            }
         }
-
-        return time;
+        return Math.max(0, minitues);
 
     }
 
-    private void buildGraph(
+    private void buildValueParentMap(
             TreeNode node,
             TreeNode parent,
-            Map<Integer, List<Integer>> graph) {
+            Map<Integer, TreeNode> byVal,
+            Map<TreeNode, TreeNode> parentMap) {
+
         if (node == null) {
             return;
         }
-
-        graph.putIfAbsent(node.val, new ArrayList<>());
-
-        if (parent != null) {
-            graph.get(node.val).add(parent.val);
-            graph.get(parent.val).add(node.val);
-        }
-
-        //Recursively build graph for children
-        buildGraph(node.left, node, graph);
-        buildGraph(node.right, node, graph);
+        byVal.put(node.val, node);
+        parentMap.put(node, parent);
+        buildValueParentMap(node.left, node, byVal, parentMap);
+        buildValueParentMap(node.right, node, byVal, parentMap);
     }
 }
