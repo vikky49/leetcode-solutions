@@ -13,8 +13,9 @@ class Solution {
 
         int subSetSum = totalSum / 2;
 
-        Boolean[][] memo = new Boolean[nums.length][subSetSum + 1];
-        return backtrack(nums, 0, subSetSum, memo);
+        boolean[][] memo = new boolean[nums.length][subSetSum + 1];
+        boolean[][] visited = new boolean[nums.length][subSetSum + 1];
+        return backtrack(nums, 0, subSetSum, memo, visited);
 
     }
 
@@ -22,7 +23,8 @@ class Solution {
             int[] nums,
             int index,
             int remaining,
-            Boolean[][] memo
+            boolean[][] memo,
+            boolean[][] visited
 
     ) {
 
@@ -39,13 +41,15 @@ class Solution {
 
         }
 
-        if (memo[index][remaining] != null) {
+        if (visited[index][remaining]) {
             return memo[index][remaining];
         }
 
-        boolean include = backtrack(nums, index + 1, remaining - nums[index], memo);
+        visited[index][remaining] = true;
 
-        boolean exclude = backtrack(nums, index + 1, remaining, memo);
+        boolean include = backtrack(nums, index + 1, remaining - nums[index], memo, visited);
+
+        boolean exclude = backtrack(nums, index + 1, remaining, memo, visited);
 
         memo[index][remaining] = include || exclude;
 
