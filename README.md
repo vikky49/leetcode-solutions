@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 219
-- **Java**: 225 solutions
+- **Total Problems**: 220
+- **Java**: 226 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -118,6 +118,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 1171 | [1171. Shortest Path In Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [LeetCode](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1171-shortest-path-in-binary-matrix/solution.java) • [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1171-shortest-path-in-binary-matrix/shortest-path-in-binary-matrix.java) |
 | 1184 | [1184. Car Pooling](https://leetcode.com/problems/car-pooling/) | [LeetCode](https://leetcode.com/problems/car-pooling/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1184-car-pooling/car-pooling.java) |
 | 1236 | [1236. N Th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) | [LeetCode](https://leetcode.com/problems/n-th-tribonacci-number/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1236-n-th-tribonacci-number/solution.java) |
+| 1242 | [1242. Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) | [LeetCode](https://leetcode.com/problems/matrix-block-sum/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1242-matrix-block-sum/matrix-block-sum.java) |
 | 1280 | [1280. Diet Plan Performance](https://leetcode.com/problems/diet-plan-performance/) | [LeetCode](https://leetcode.com/problems/diet-plan-performance/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1280-diet-plan-performance/solution.java) |
 | 1371 | [1371. Minimum Remove To Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [LeetCode](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1371-minimum-remove-to-make-valid-parentheses/solution.java) |
 | 1421 | [1421. Find Numbers With Even Number Of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | [LeetCode](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/1421-find-numbers-with-even-number-of-digits/solution.java) |
@@ -270,4 +271,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-10-22 02:30:46*
+*Last updated: 2025-10-23 15:45:35*
