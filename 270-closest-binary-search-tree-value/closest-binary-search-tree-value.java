@@ -16,15 +16,17 @@
 class Solution {
     public int closestValue(TreeNode root, double target) {
 
+        // Initialize closest to root value (best we know so far)
         int closest = root.val;
 
         while (root != null) {
             double currentDistance = Math.abs(root.val - target);
             double closestDistance = Math.abs(closest - target);
-
+            //If there are multiple answers, print the smallest.
+            //Hence we choose the smallest 
             if (currentDistance < closestDistance ||
-                    currentDistance == closestDistance &&
-                            root.val < closest) {
+                    (currentDistance == closestDistance &&
+                            root.val < closest)) {
 
                 closest = root.val;
             }
