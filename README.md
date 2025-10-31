@@ -4,8 +4,8 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 
 ## 📊 Statistics
 
-- **Total Problems**: 220
-- **Java**: 226 solutions
+- **Total Problems**: 221
+- **Java**: 227 solutions
 - **Python**: 6 solutions
 
 ## 🗂️ Solutions by Problem Type
@@ -130,6 +130,7 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 | 2350 | [2350. Find Closest Number To Zero](https://leetcode.com/problems/find-closest-number-to-zero/) | [LeetCode](https://leetcode.com/problems/find-closest-number-to-zero/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2350-find-closest-number-to-zero/solution.java) |
 | 2524 | [2524. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) | [LeetCode](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/2524-largest-positive-integer-that-exists-with-its-negative/solution.java) |
 | 3974 | [3974. Xor After Range Multiplication Queries I](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/) | [LeetCode](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/3974-xor-after-range-multiplication-queries-i/solution.java) |
+| 3997 | [3997. Maximize Sum Of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | [LeetCode](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | [Java](https://github.com/vikky49/leetcode-solutions/blob/main/3997-maximize-sum-of-at-most-k-distinct-elements/maximize-sum-of-at-most-k-distinct-elements.java) |
 
 ### Trees
 
@@ -271,4 +272,4 @@ My solutions to LeetCode problems in multiple programming languages, organized b
 2. Click on language to view solution code in this repo.
 3. Clone repo to run solutions locally.
 
-*Last updated: 2025-10-30 21:35:28*
+*Last updated: 2025-10-31 17:33:07*
